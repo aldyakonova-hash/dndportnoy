@@ -7817,7 +7817,7 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
         + '<path id="bArcTop" fill="none" d="' + E.path.arc(CX, CY, 322, E.path.rad(204), E.path.rad(336)) + '"/>'
         + '<path id="bArcBot" fill="none" d="' + E.path.arc(CX, CY, 318, E.path.rad(156), E.path.rad(24)) + '"/>'
         + '</defs>'
-        + '<text class="arct"><textPath href="#bArcTop" startOffset="50%" text-anchor="middle">Одиннадцать вечеров</textPath></text>'
+        + '<text class="arct"><textPath href="#bArcTop" startOffset="50%" text-anchor="middle">' + (({11:'Одиннадцать',12:'Двенадцать',13:'Тринадцать',14:'Четырнадцать',15:'Пятнадцать',16:'Шестнадцать',17:'Семнадцать',18:'Восемнадцать',19:'Девятнадцать',20:'Двадцать'})[N] || N) + ' вечеров</textPath></text>'
         + '<text class="arct" dominant-baseline="hanging"><textPath href="#bArcBot" startOffset="50%" text-anchor="middle">Тяните шкалу</textPath></text>';
 
       /* --- кольцо A: частая насечка по краю, идёт медленнее всех --- */
@@ -13085,7 +13085,7 @@ W['arhiv']=function(){var __root=window.document.getElementById('r-arhiv');var _
       ['sily',    'Лица и силы',    'Кто в этом городе что-то решает',            '.a-force'],
       ['niti',    'Открытые нити',  'Ни одна из них не закрыта — у каждой есть источник', '.a-thread'],
       ['veshi',   'Вещи',           'Предметы, которые хроника назвала поимённо', '.a-item'],
-      ['hronika', 'Хронология',     'Одиннадцать вечеров по порядку',             '.a-ev']
+      ['hronika', 'Хронология',     'Двенадцать вечеров по порядку',             '.a-ev']
     ];
     var SPAN = 32;                       /* крайние деления, градусов от отвеса */
     var idx = 0, ang = 0, vel = 0, raf = 0, dragging = false;
