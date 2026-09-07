@@ -2943,6 +2943,33 @@ html.is-calm #r-kniga .b-flip{display:none!important}
 #r-lica .l-open:hover,#r-lica .l-open:focus-visible{transform:none;box-shadow:0 24px 44px -30px #000,inset 0 0 0 1px var(--gold)}
 @media(max-width:700px){#r-lica .l-tray__row{grid-template-columns:minmax(0,360px);justify-content:center}#r-lica .l-fan{--cw:clamp(136px,38vw,168px);--fp:14px}#r-lica .l-fan-nav{flex:1}#r-lica .l-fan-nav button{flex:1}}
 </style>
+<style id="buttons-polish">
+/* Preserve seals and medallions; make labels and states consistent. */
+.k-btn{max-width:100%;line-height:1.4;white-space:normal;overflow-wrap:break-word}
+.k-icon-btn{flex-shrink:0}
+button:disabled{cursor:default}
+#r-kniga .b-mode{border-color:var(--line);background:linear-gradient(174deg,#231a42,#15102c);box-shadow:inset 0 1px 0 #f0d79a14}
+#r-kniga .b-mode button{position:relative;font-size:15px;line-height:1.4;transition:background-color .2s,color .2s,box-shadow .2s}
+#r-kniga .b-mode button[aria-pressed="true"]{background:linear-gradient(160deg,#f4e2b5,#d8bc7c);box-shadow:inset 0 0 0 1px #6e522060,inset 0 2px 0 #fff4d666;color:#302317}
+#r-kniga .b-mode button:not([aria-pressed="true"]):hover{background:#c9a45c18;color:var(--cream)}
+#r-kniga .b-core__go{max-width:100%;white-space:normal;line-height:1.35;padding-block:8px}
+#r-arhiv .a-pend__hit button{color:var(--ink-mid);min-height:52px}
+#r-arhiv .a-pend__hit button span{max-width:100%;overflow-wrap:anywhere}
+#r-lica .l-fan-nav button{padding:10px;width:48px;font-size:21px;line-height:1;letter-spacing:0}
+#r-masterskaya .w-copy{min-height:48px}
+@media(max-width:600px){
+ .k-btn{padding-inline:18px;letter-spacing:.09em}
+ #r-arhiv .a-pend__hit button{font-size:12px;letter-spacing:.035em;padding-inline:4px}
+ #r-arhiv .a-pend__hit button span{hyphens:auto}
+ #r-kniga .b-dial-core .b-core__go{font-size:11px;letter-spacing:.045em;padding-inline:6px}
+ #r-lica .l-fan__bar{gap:14px}
+ #r-lica .l-fan-nav{flex:1 0 100%}
+ #r-lica .l-seal{flex:1 0 100%;justify-content:center}
+ #r-lica #fanOpen{width:100%}
+ #r-lica .l-fan__cur{order:0}
+}
+@media(prefers-reduced-motion:reduce){#r-kniga .b-mode button{transition:none}}
+</style>
 <section class="route" id="r-index" hidden>
 
 <canvas class="k-field-bg" id="fieldBg" aria-hidden="true"></canvas>
@@ -13327,7 +13354,7 @@ W['arhiv']=function(){var __root=window.document.getElementById('r-arhiv');var _
            Ширину делит flex — проценты от края крайние подписи не удерживали. */
         return '<button type="button" role="tab" data-i="' + i + '"'
           + ' aria-selected="' + (i === idx ? 'true' : 'false') + '"'
-          + ' aria-controls="' + d[0] + '"><span>' + esc(d[1]) + '</span>'
+          + ' aria-controls="' + d[0] + '"><span>' + esc(d[0]==='hronika'?'Хроника':d[1]) + '</span>'
           + '<b>' + (counts[i] == null ? '—' : counts[i]) + '</b></button>';
       }).join('');
     }
