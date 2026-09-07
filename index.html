@@ -1830,7 +1830,7 @@ html.is-calm .o-panel{transition:none}body.o-locked{overflow:hidden}#r-omut .o-s
    Подключается ПОСЛЕ kodeks.css и site.css.
 
    Колода из тридцати восьми карт живёт в трёх состояниях, и это одни и те же
-   узлы: веер дугой → пасьянс раскладом → открытая карта в лотке под веером.
+   узлы: веер дугой → пасьянс раскладом → открытая карта в лотке в вашем раскладе.
    Между состояниями меняется ТОЛЬКО transform у карты, поэтому переход
    бесплатен для композитора и не трогает ни одного пикселя разметки.
 
@@ -1968,7 +1968,7 @@ html.is-calm .o-panel{transition:none}body.o-locked{overflow:hidden}#r-omut .o-s
    самоцвет её цвета; слово выходит на выбранной карте и во всём раскладе */
 .l-fan[data-mode="fan"] .l-fan__c:not(.is-on) .l-fan__tag{visibility:hidden}#r-lica /* карту под курсором поднимаем над соседями — в раскладе иначе не прочесть.
    Порядок слоёв назначается кодом в style, #r-lica перебить его можно только так */
-.l-fan__c:hover{z-index:300!important}#r-lica /* фокус живёт на самой колоде: она — listbox, #r-lica карта внутри — вариант */
+.l-fan__c:hover .l-fan__back{border-color:var(--gold-hi);box-shadow:inset 0 0 22px #c9a45c25}#r-lica /* фокус живёт на самой колоде: она — listbox, #r-lica карта внутри — вариант */
 .l-fan:focus-visible{outline:2px solid var(--gold);outline-offset:3px}#r-lica .l-fan:focus-visible .l-fan__c.is-on .l-fan__back{outline:2px solid var(--gold-hi);outline-offset:2px}#r-lica /* ---- строка под колодой ---- */
 .l-fan__bar{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;
   margin-top:clamp(14px,1.8vw,22px)}#r-lica .l-fan__cur{flex:1;min-width:180px;margin:0;font-family:var(--kap);text-transform:uppercase;
@@ -2932,6 +2932,17 @@ html.is-calm #r-kniga .b-flip{display:none!important}
  #r-kniga .b-flow::before{inset-inline:7px}
 }
 </style>
+<style id="faces-update">
+#r-lica .l-fan__back{transition:border-color .22s,box-shadow .22s}
+#r-lica .l-fan[data-mode="fan"],#r-lica .l-fan[data-mode="fan"] *{touch-action:pan-y}
+#r-lica .l-fan__c{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+#r-lica .l-fan__c img{pointer-events:none;-webkit-user-drag:none}
+#r-lica .l-tray__row{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+#r-lica .l-fan-nav{display:flex;gap:8px}
+#r-lica .l-fan-nav button{min-width:48px;min-height:48px}
+#r-lica .l-open:hover,#r-lica .l-open:focus-visible{transform:none;box-shadow:0 24px 44px -30px #000,inset 0 0 0 1px var(--gold)}
+@media(max-width:700px){#r-lica .l-tray__row{grid-template-columns:minmax(0,360px);justify-content:center}#r-lica .l-fan{--cw:clamp(136px,38vw,168px);--fp:14px}#r-lica .l-fan-nav{flex:1}#r-lica .l-fan-nav button{flex:1}}
+</style>
 <section class="route" id="r-index" hidden>
 
 <canvas class="k-field-bg" id="fieldBg" aria-hidden="true"></canvas>
@@ -3595,7 +3606,7 @@ html.is-calm #r-kniga .b-flip{display:none!important}
       <h1 class="k-h1 l-top__t">Колода<br>на сорок пять</h1>
       <p class="l-top__lede">Отряд, союзники, противники и те, кого хроника так и не объяснила.
         На каждой карте — имя и лицо: печать раскладывает колоду пасьянсом,
-        вытянутая карта ложится под веером, а за картой открывается досье.</p>
+        вытянутая карта ложится в вашем раскладе, а за картой открывается досье.</p>
       <div class="s-strip" id="topChips"></div>
     </div>
     <div class="l-top__sig k-orn" id="topSig" data-still aria-hidden="true"></div>
@@ -3619,10 +3630,11 @@ html.is-calm #r-kniga .b-flip{display:none!important}
     <div class="l-fan" id="fan" role="listbox" tabindex="0" data-mode="fan"
          aria-label="Колода: перебор карт" aria-activedescendant="">
       <div class="l-fan__stage" id="fanStage"></div>
-      <p class="l-fan__empty" id="fanEmpty" hidden>Все карты этого отбора уже под веером.</p>
+      <p class="l-fan__empty" id="fanEmpty" hidden>Все карты этого отбора уже в вашем раскладе.</p>
     </div>
 
     <div class="l-fan__bar">
+      <div class="l-fan-nav"><button class="k-btn" id="fanPrev" aria-label="Предыдущая карта">←</button><button class="k-btn" id="fanNext" aria-label="Следующая карта">→</button></div>
       <!-- необычная кнопка: восковая печать, из-под которой веером
            выходят три карты. Раскладывает колоду пасьянсом и собирает обратно -->
       <button class="l-seal" type="button" id="fanSpread" aria-pressed="false">
@@ -3636,16 +3648,16 @@ html.is-calm #r-kniga .b-flip{display:none!important}
       <button class="k-btn" type="button" id="fanOpen">Вытянуть карту</button>
     </div>
 
-    <!-- вытянутые карты ложатся под веером: портрет во всё поле, имя, справка -->
+    <!-- вытянутые карты ложатся в вашем раскладе: портрет во всё поле, имя, справка -->
     <section class="l-tray" id="tray" aria-labelledby="trayT" hidden>
       <div class="l-tray__h">
         <span class="l-tray__sig k-orn" id="traySig" aria-hidden="true"></span>
-        <h3 id="trayT">Под веером</h3>
+        <h3 id="trayT">Ваш расклад</h3>
         <span class="l-tray__n" id="trayN"></span>
-        <button class="k-btn k-btn--ghost" type="button" id="trayBack">Вернуть в колоду</button>
+        <button class="k-btn k-btn--ghost" type="button" id="trayBack">Вернуть все в колоду</button>
       </div>
       <div class="l-tray__row" id="trayRow"></div>
-      <p class="l-tray__hint">Нажмите вытянутую карту — досье развернётся во весь экран</p>
+      <p class="l-tray__hint">Выберите до трёх карт. Четвёртая вернёт первую в колоду. Нажмите карту, чтобы открыть досье.</p>
     </section>
   </div>
 </section>
@@ -9966,7 +9978,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
      пасьянс  — печать раскладывает колоду каскадом по столбцам; карты
                 накрывают друг друга, и имя остаётся на открытой верхней
                 полосе;
-     вытянутая — карта выходит из колоды, вырастает и ложится под веером:
+     вытянутая — карта выходит из колоды, вырастает и ложится в вашем раскладе:
                 портрет во всё поле, имя, справка, принадлежность.
      досье    — нажатие на вытянутую карту разворачивает лист во весь экран:
                 под именем полоса канонических листов героя (в рост, в позах —
@@ -10624,6 +10636,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
     /* cascade: 0 — сразу, 1 — сдаём с оттяжкой, −1 — собираем в обратном порядке */
     function place(force, cascade) {
       var kids = elStage.children, n = list.length, i;
+      $('#fanPrev').disabled=!n||idx===0;$('#fanNext').disabled=!n||idx>=n-1;
       var prev = lastPlan;                 /* план прошлого расклада — для сбора */
       elEmpty.hidden = n > 0;
       if (!n) { elFan.style.height = ''; say(); return; }
@@ -10675,12 +10688,12 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
           a = ((ci * 37) % 9 - 4) * 0.82;
           var jx = ((ci * 53) % 5 - 2) * 1.7;
           var cx = plan.padX + col * (plan.tw + plan.gap) + plan.tw / 2 + jx;
-          var by = 15 + row * plan.dy + plan.th;          /* низ карты от верха коробки */
+          var by = 15 + (plan.perCol - 1 - row) * plan.dy + plan.th;          /* низ карты от верха коробки */
           sc = plan.s;
           tr = 'translate3d(' + (cx - m.ox).toFixed(1) + 'px,' + (by - m.oy).toFixed(1)
              + 'px,0) rotate(' + a.toFixed(2) + 'deg) scale(' + sc.toFixed(3) + ')';
           el.style.opacity = '1';
-          el.style.zIndex = String(10 + row);
+          el.style.zIndex = String(10 + plan.perCol - row);
           el.style.transitionDelay = cascade > 0
             ? Math.min(700, ord(plan, si) * 17) + 'ms' : '';
         } else {
@@ -10714,14 +10727,14 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
     function say() {
       if (!list.length) {
         elCur.textContent = taken.length
-          ? 'Все карты отбора уже под веером'
+          ? 'Все карты отбора уже в вашем раскладе'
           : 'В этой стопке карт нет';
         elFan.removeAttribute('aria-activedescendant');
         $('#fanOpen').disabled = true;
         return;
       }
       var ci = list[idx], c = C[ci];
-      $('#fanOpen').disabled = false;
+      $('#fanOpen').disabled = taking;
       elCur.innerHTML = '<b>' + roman(ci + 1) + '</b> · ' + esc(c.name)
         + ' · ' + esc(c.tag || '')
         + ' · ' + list.length + ' в колоде';
@@ -10827,11 +10840,29 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
       if (idx >= pos) idx++;                 /* выбор в веере не должен съехать */
     }
 
-    function take(ci, quiet) {
+    var taking = false;
+    function takingState(on){
+      taking=on;elFan.setAttribute('aria-busy',on?'true':'false');
+      document.querySelectorAll('#filters button').forEach(function(b){b.disabled=on;});
+      elSpread.disabled=on;$('#trayBack').disabled=on;$('#fanOpen').disabled=on||!list.length;
+    }
+    async function take(ci, quiet) {
+      if(taking)return;
       if (taken.indexOf(ci) >= 0) { if (!quiet) openDossier(ci); return; }
-      /* Лицом вверх лежит ровно одна карта: следующая переворачивает
-         предыдущую обратно и кладёт её на место в колоде. */
-      while (taken.length) untake(taken[taken.length - 1]);
+      takingState(true);
+      if(taken.length>=3){
+        var first=taken[0], old=trayCard(first), rect=old.getBoundingClientRect(), ghost=old.cloneNode(true);
+        ghost.classList.remove('is-landing');
+        Object.assign(ghost.style,{position:'fixed',left:rect.left+'px',top:rect.top+'px',width:rect.width+'px',height:rect.height+'px',margin:'0',zIndex:'1000',pointerEvents:'none'});
+        ghost.setAttribute('aria-hidden','true');ghost.tabIndex=-1;
+        untake(first);place();
+        var home=elStage.querySelector('[data-i="'+first+'"]'), target=home&&!home.hidden?home.getBoundingClientRect():elFan.getBoundingClientRect();
+        if(!calm()&&!quiet&&ghost.animate){
+          __root.appendChild(ghost);
+          await ghost.animate([{transform:'translate(0,0) scale(1)',opacity:1},{transform:'translate('+(target.left+target.width/2-rect.left-rect.width/2)+'px,'+(target.top+target.height/2-rect.top-rect.height/2)+'px) scale(.35) rotateY(180deg)',opacity:.15}],{duration:460,easing:'cubic-bezier(.4,0,.2,1)',fill:'forwards'}).finished.catch(function(){});
+          ghost.remove();
+        }
+      }
 
       var src = elStage.querySelector('[data-i="' + ci + '"]');
       var k = list.indexOf(ci);
@@ -10844,7 +10875,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
       wantPortrait(C[ci]);        /* спрашиваем о договорном портрете один раз */
       countTray();
 
-      var land = function () { dst.classList.remove('is-landing'); };
+      var land = function () { dst.classList.remove('is-landing'); takingState(false); };
       if (src && dst && !calm() && !quiet && dst.getBoundingClientRect().width) {
         fly(src, dst, ci, land);
       } else {
@@ -10954,16 +10985,12 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
                 E.gold(E.path.circle(w / 2, h / 2, m * 0.94), { sw: .8, op: .5 })];
       });
     }
-    /* Под веером лежит одна карта, поэтому считать нечего — надписываем, кто
-       именно открыт: имя и принадлежность читаются раньше, чем взгляд дойдёт
-       до самой карточки. */
+    /* Открытые карты сохраняют порядок выбора; показываем лимит расклада. */
     function countTray() {
-      var ci = taken.length ? taken[taken.length - 1] : -1;
-      elN.textContent = ci < 0 ? ''
-        : C[ci].name + (C[ci].tag ? ' · ' + C[ci].tag : '');
+      elN.textContent = taken.length + ' / 3 карты';
     }
     function backToDeck() {
-      if (!taken.length) return;
+      if (taking || !taken.length) return;
       taken = [];
       elRow.innerHTML = '';
       elTray.hidden = true;
@@ -10994,7 +11021,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
       built = true;
 
       /* ---- тяга ---- */
-      var down = false, x0 = 0, i0 = 0, moved = 0;
+      var down = false, x0 = 0, y0=0, i0 = 0, moved = 0, touchCard=null, suppressClick=0;
       /* Захват указателя ставится НЕ сразу, а когда тяга действительно
          началась. Пока палец не сдвинулся, карта остаётся собственной целью
          нажатия, и браузер шлёт click на неё; захваченный же указатель
@@ -11003,14 +11030,18 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
       var grab = 0;
       elFan.addEventListener('pointerdown', function (ev) {
         moved = 0;
-        if (mode !== 'fan') return;
+        if (mode !== 'fan' || taking || ev.isPrimary===false) return;
         if (ev.button !== undefined && ev.button !== 0) return;
-        down = true; x0 = ev.clientX; i0 = idx; grab = 0;
+        down = true; x0 = ev.clientX; y0=ev.clientY; i0 = idx; grab = 0;
+        touchCard=ev.pointerType==='touch'?ev.target.closest('.l-fan__c'):null;
+        if(ev.pointerType==='touch'){try{elFan.setPointerCapture(ev.pointerId);grab=1;}catch(e){}}
         elFan.classList.add('is-drag');
       });
       elFan.addEventListener('pointermove', function (ev) {
         if (!down) return;
         var dx = ev.clientX - x0;
+        if(Math.abs(ev.clientY-y0)>Math.abs(dx)&&!moved)return;
+        if(Math.abs(dx)>6&&ev.cancelable)ev.preventDefault();
         moved = Math.max(moved, Math.abs(dx));
         if (!grab && moved > 6) {
           grab = 1;
@@ -11021,6 +11052,11 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
       function up(ev) {
         if (!down) return;
         down = false;
+        if(ev.pointerType==='touch'){
+          suppressClick=performance.now()+600;
+          if(ev.type==='pointerup'&&moved<=6&&touchCard){var ci=+touchCard.dataset.i,k=list.indexOf(ci);if(k===idx)take(ci);else if(k>=0)setIdx(k);}
+        }
+        touchCard=null;
         elFan.classList.remove('is-drag');
         if (grab) { try { elFan.releasePointerCapture(ev.pointerId); } catch (e) {} }
         grab = 0;
@@ -11070,7 +11106,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
       /* ---- нажатие по карте ---- */
       elStage.addEventListener('click', function (ev) {
         var b = ev.target.closest('.l-fan__c');
-        if (!b || (mode === 'fan' && moved > 6)) return;
+        if (!b || performance.now()<suppressClick || (mode === 'fan' && moved > 6)) return;
         var ci = +b.getAttribute('data-i'), k = list.indexOf(ci);
         elFan.focus();
         /* в веере первым нажатием карту достают наверх, вторым переворачивают;
@@ -11084,6 +11120,8 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
         var b = ev.target.closest('.l-open');
         if (b) openDossier(+b.getAttribute('data-i'));
       });
+      $('#fanPrev').addEventListener('click',function(){setIdx(idx-1);});
+      $('#fanNext').addEventListener('click',function(){setIdx(idx+1);});
       $('#trayBack').addEventListener('click', backToDeck);
 
       /* ---- печать ---- */
