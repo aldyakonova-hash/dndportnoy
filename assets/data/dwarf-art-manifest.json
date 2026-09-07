@@ -1,0 +1,679 @@
+{
+  "schema_version": 1,
+  "package_version": "1.0",
+  "project": "Жребий",
+  "character_id": "dwarf",
+  "character_name_ru": "Последний Дварф",
+  "site_card_id": "vitya",
+  "graph_node_id": "pc_last_dwarf",
+  "date": "2026-09-07",
+  "status": "packaged-current-selection",
+  "packaging_basis_ru": "Саша просмотрела общую галерею 25 актуальных изображений и поручила собрать пакет для сайта и канона.",
+  "master_id": "dwarf-master",
+  "portrait_id": "dwarf-portrait",
+  "approved_base_ids": [
+    "dwarf-master",
+    "dwarf-portrait",
+    "dwarf-view-front",
+    "dwarf-view-left-profile",
+    "dwarf-view-back"
+  ],
+  "identity_reference_order": [
+    "dwarf-master",
+    "dwarf-portrait",
+    "relevant_view_or_equipment"
+  ],
+  "coordinate_convention_ru": "Анатомические стороны персонажа: обычная рапира справа, зачарованная слева. Не зеркалить.",
+  "galleries": {
+    "all": [
+      "dwarf-master",
+      "dwarf-portrait",
+      "dwarf-view-front",
+      "dwarf-view-left-profile",
+      "dwarf-view-back",
+      "dwarf-head-three-quarter",
+      "dwarf-head-profile",
+      "dwarf-view-back-three-quarter",
+      "dwarf-state-orange",
+      "dwarf-expression-analytical",
+      "dwarf-expression-charismatic",
+      "dwarf-expression-psychic-pain",
+      "dwarf-expression-physical-pain",
+      "dwarf-expression-heroic-resolve",
+      "dwarf-equipment-ordinary-rapier",
+      "dwarf-equipment-enchanted-rapier",
+      "dwarf-equipment-frame-drum",
+      "dwarf-equipment-beater",
+      "dwarf-equipment-small-items",
+      "dwarf-hands-and-grips",
+      "dwarf-scene-01-road",
+      "dwarf-scene-02-tavern",
+      "dwarf-scene-03-music",
+      "dwarf-scene-04-guard",
+      "dwarf-scene-05-watch"
+    ],
+    "model_sheet": [
+      "dwarf-portrait",
+      "dwarf-view-front",
+      "dwarf-view-left-profile",
+      "dwarf-view-back",
+      "dwarf-head-three-quarter",
+      "dwarf-head-profile",
+      "dwarf-view-back-three-quarter",
+      "dwarf-state-orange",
+      "dwarf-expression-analytical",
+      "dwarf-expression-charismatic",
+      "dwarf-expression-psychic-pain",
+      "dwarf-expression-physical-pain",
+      "dwarf-expression-heroic-resolve",
+      "dwarf-equipment-ordinary-rapier",
+      "dwarf-equipment-enchanted-rapier",
+      "dwarf-equipment-frame-drum",
+      "dwarf-equipment-beater",
+      "dwarf-equipment-small-items",
+      "dwarf-hands-and-grips"
+    ],
+    "story": [
+      "dwarf-scene-01-road",
+      "dwarf-scene-02-tavern",
+      "dwarf-scene-03-music",
+      "dwarf-scene-04-guard",
+      "dwarf-scene-05-watch"
+    ],
+    "views": [
+      "dwarf-view-front",
+      "dwarf-view-left-profile",
+      "dwarf-view-back",
+      "dwarf-view-back-three-quarter"
+    ],
+    "portraits": [
+      "dwarf-portrait",
+      "dwarf-head-three-quarter",
+      "dwarf-head-profile"
+    ],
+    "expressions": [
+      "dwarf-expression-analytical",
+      "dwarf-expression-charismatic",
+      "dwarf-expression-psychic-pain",
+      "dwarf-expression-physical-pain",
+      "dwarf-expression-heroic-resolve"
+    ],
+    "states": [
+      "dwarf-state-orange"
+    ],
+    "equipment": [
+      "dwarf-equipment-ordinary-rapier",
+      "dwarf-equipment-enchanted-rapier",
+      "dwarf-equipment-frame-drum",
+      "dwarf-equipment-beater",
+      "dwarf-equipment-small-items",
+      "dwarf-hands-and-grips"
+    ]
+  },
+  "images": 25,
+  "scene_context_ru": "Пять самостоятельных ситуаций; конкретные главы или новые события лора не назначены.",
+  "path_base": "project_root",
+  "formats": [
+    "webp"
+  ],
+  "renditions": 25,
+  "encoding": {
+    "webp_quality": 90,
+    "jpeg_quality": 93,
+    "jpeg_subsampling": 0,
+    "resize": false,
+    "crop": false
+  },
+  "assets": [
+    {
+      "id": "dwarf-master",
+      "category": "master",
+      "title_ru": "Мастер · ¾",
+      "alt_ru": "Основной образ Последнего Дварфа: высокий кованый бард со светлым стальным телом, циановыми глазами и двумя рапирами на поясе.",
+      "note_ru": "Принятая основа · 7 сентября 2026",
+      "gallery_number": "01",
+      "order": 1,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "approved-base",
+      "source_sha256": "b7aa0b4d43ef9c3c7a8b8cb80263822751788b0895a1856d8ae07781f95c2516",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-master.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 330898,
+          "sha256": "b6b12704d4b5e41233d408130a409e925e03caa1c1e7ff3d8d2e6078f7498cf6"
+        }
+      }
+    },
+    {
+      "id": "dwarf-portrait",
+      "category": "portraits",
+      "title_ru": "Крупный портрет",
+      "alt_ru": "Стальное лицо Последнего Дварфа крупно: расколотая корона на лбу, циановый камень, цепочечная борода и тёмные брейды.",
+      "note_ru": "Принятая основа · 7 сентября 2026",
+      "gallery_number": "02",
+      "order": 2,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "approved-base",
+      "source_sha256": "ce8908928fd54123d7cf6469d0905966f9315725e9854d46000bd20972469ca2",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-portrait.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 414918,
+          "sha256": "afdb43600e047efcea61e728267c61357ec10410d8dccf3c6f2a316eab75ee33"
+        }
+      }
+    },
+    {
+      "id": "dwarf-view-front",
+      "category": "views",
+      "title_ru": "Вид спереди",
+      "alt_ru": "Последний Дварф в полный рост спереди, руки свободны, две рапиры в ножнах на поясе.",
+      "note_ru": "Принятая основа · 7 сентября 2026",
+      "gallery_number": "03",
+      "order": 3,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "approved-base",
+      "source_sha256": "0d977d52993518467fd5670f00db0bd1e60b1b80514d0d0ae22bf837b07da9b1",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-view-front.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 325344,
+          "sha256": "8c4b376cd8221d3c2efe3c9fbf60da221950ba7a104b37df33accd63c7f08b9c"
+        }
+      }
+    },
+    {
+      "id": "dwarf-view-left-profile",
+      "category": "views",
+      "title_ru": "Левый профиль",
+      "alt_ru": "Левый профиль Последнего Дварфа в полный рост; длинные ножны обеих рапир направлены назад и вниз.",
+      "note_ru": "Принятая основа · 7 сентября 2026",
+      "gallery_number": "04",
+      "order": 4,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "approved-base",
+      "source_sha256": "7a351f70de93732849baea47e257d6a4180d7edf8263c51548f8eb3b0bfe6272",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-view-left-profile.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 253138,
+          "sha256": "8cd3abbf46c1aadfc6dd666b60ae7c82c2e2076c6931de1b2a537bad6ac089aa"
+        }
+      }
+    },
+    {
+      "id": "dwarf-view-back",
+      "category": "views",
+      "title_ru": "Вид сзади",
+      "alt_ru": "Последний Дварф со спины: бубен на ремнях, брейды и снаряжение на поясе.",
+      "note_ru": "Принятая основа · 7 сентября 2026",
+      "gallery_number": "05",
+      "order": 5,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "approved-base",
+      "source_sha256": "40f39da5ed46b2b4010965cfea23681ca82aed6c3b164c56ce50ea4bc15957e1",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-view-back.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 275120,
+          "sha256": "9ac22fe31f991c37d5fc180cfa9155feab851f8a9d981e9a428e477576ada5dc"
+        }
+      }
+    },
+    {
+      "id": "dwarf-head-three-quarter",
+      "category": "portraits",
+      "title_ru": "Голова · ¾",
+      "alt_ru": "Голова Последнего Дварфа в три четверти: металлическое лицо, цепочечная борода, корона и циановое свечение.",
+      "note_ru": "",
+      "gallery_number": "06",
+      "order": 6,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "a737460d7cb1700def668abbe3316083aacbc88f97f2cf2e19dcac37a4db26dc",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-head-three-quarter.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 392868,
+          "sha256": "f9bbc3eea358c9c863f242389a8ca9996ffbd45b9a21fd2e0faa7d36bfdf706c"
+        }
+      }
+    },
+    {
+      "id": "dwarf-head-profile",
+      "category": "portraits",
+      "title_ru": "Голова · строгий профиль",
+      "alt_ru": "Профиль головы Последнего Дварфа с круглым ушным портом, бородой и сегментированными брейдами.",
+      "note_ru": "",
+      "gallery_number": "07",
+      "order": 7,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "f111c12eb87b4ce565eb9a5b10af2af78dae614a0404e9bbdc27aa6352cbe6db",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-head-profile.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 287976,
+          "sha256": "0f0a6366cdaec41032fd0408df328d4aa00e39766d530954162088c2c3b4796a"
+        }
+      }
+    },
+    {
+      "id": "dwarf-view-back-three-quarter",
+      "category": "views",
+      "title_ru": "Ростовой вид · сзади ¾ · исправленный",
+      "alt_ru": "Последний Дварф сзади в три четверти; бубен на спине, обе прямые рапиры в ножнах направлены назад.",
+      "note_ru": "Рапиры выпрямлены и направлены назад. Дальний эфес и часть его подвеса скрыты рукой и корпусом; весь подвес проверяется по принятому профилю.",
+      "gallery_number": "08",
+      "order": 8,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "69cfee4de41252ee33eb172aa084e01e91e5310d18115910c0924190ff2d908d",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-view-back-three-quarter.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 178054,
+          "sha256": "cb1129b2d7b0d7bc8a3f41fbc61732287e4db72a50eeaae74b4637054620c9d0"
+        }
+      }
+    },
+    {
+      "id": "dwarf-state-orange",
+      "category": "states",
+      "title_ru": "Оранжевое состояние",
+      "alt_ru": "Последний Дварф в состоянии согласованного оранжевого внутреннего свечения.",
+      "note_ru": "",
+      "gallery_number": "09",
+      "order": 9,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "5a4699502cf739ec90856841c98e65bb64ef0b3b1c4ba2fc2bda869e6f1e6ab2",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-state-orange.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 441708,
+          "sha256": "f2e30ddf2b6c9f21300c150b5f18d8dd2e9dc0dec0324c448e70e2a058fceff2"
+        }
+      }
+    },
+    {
+      "id": "dwarf-expression-analytical",
+      "category": "expressions",
+      "title_ru": "Аналитическая речь",
+      "alt_ru": "Последний Дварф сосредоточенно анализирует происходящее и говорит.",
+      "note_ru": "",
+      "gallery_number": "10",
+      "order": 10,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "f87d846d26f0061bbe3bc0514158409f06236a21b0a5325eaeae3516bcb095a8",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-expression-analytical.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 341666,
+          "sha256": "182e515ab2d7e25a9bf3bd0bc1c587bce12f46ddcc411d9d4b6cbc1137240ba3"
+        }
+      }
+    },
+    {
+      "id": "dwarf-expression-charismatic",
+      "category": "expressions",
+      "title_ru": "Обаятельная речь",
+      "alt_ru": "Последний Дварф говорит с уверенной сдержанной полуулыбкой.",
+      "note_ru": "",
+      "gallery_number": "11",
+      "order": 11,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "17328c6bf05c935aeaf70b4ede3c02c6cfe02baf80d25fb692ea6de3501e94fa",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-expression-charismatic.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 475020,
+          "sha256": "752233040e6eff60731c7dd7c566b346d3234ecb3441753609d6a179553fb0c6"
+        }
+      }
+    },
+    {
+      "id": "dwarf-expression-psychic-pain",
+      "category": "expressions",
+      "title_ru": "Психическая боль",
+      "alt_ru": "Последний Дварф сопротивляется психической боли; напряжённый взгляд и металлическая челюсть.",
+      "note_ru": "",
+      "gallery_number": "12",
+      "order": 12,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "3836841205a0664d7ce44c5dfb312e126e0794e5767be7be043ba8b1bc546cf9",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-expression-psychic-pain.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 375804,
+          "sha256": "e1392780b8dfad2da5f5b2b4f22d2c419eff42281922441b13dccfbb131e889b"
+        }
+      }
+    },
+    {
+      "id": "dwarf-expression-physical-pain",
+      "category": "expressions",
+      "title_ru": "Резкая физическая боль",
+      "alt_ru": "Резкая физическая боль на механическом лице Последнего Дварфа.",
+      "note_ru": "",
+      "gallery_number": "13",
+      "order": 13,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "5d4bf3e421b7435669ee2ad429b3f9fe44d503f2335389f6df6c7b1d29b20df0",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-expression-physical-pain.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 387858,
+          "sha256": "478e2a25b0cb695bb12098d283d580fb6558aa453705310d386c25a98484da74"
+        }
+      }
+    },
+    {
+      "id": "dwarf-expression-heroic-resolve",
+      "category": "expressions",
+      "title_ru": "Спокойная решимость",
+      "alt_ru": "Спокойная героическая решимость Последнего Дварфа.",
+      "note_ru": "",
+      "gallery_number": "14",
+      "order": 14,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "f4053e29b3ace5b2700db24d948d822eeafe34ae2ef251c6a285a028e9f137d9",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-expression-heroic-resolve.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 409036,
+          "sha256": "9fbf730f661ead7c2e281558375695328add4d63e7dfe42eb352995aa85ac37e"
+        }
+      }
+    },
+    {
+      "id": "dwarf-equipment-ordinary-rapier",
+      "category": "equipment",
+      "title_ru": "Обычная рапира и ножны",
+      "alt_ru": "Обычная длинная рапира с ажурной гардой и её тёмные ножны; без камней и магического свечения.",
+      "note_ru": "",
+      "gallery_number": "15",
+      "order": 15,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "50e1dd33d7c8019f5d5d057819e9d799bc297214d829bc77a1ecdaaab4d9a649",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-equipment-ordinary-rapier.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 198816,
+          "sha256": "8ee9879af371ff6b9581fbacd46e4db4e2289496241418ec832b59756b550b35"
+        }
+      }
+    },
+    {
+      "id": "dwarf-equipment-enchanted-rapier",
+      "category": "equipment",
+      "title_ru": "Зачарованная рапира · два состояния",
+      "alt_ru": "Зачарованная рапира: обнажённое и убранное состояния, циановые кристаллы и непрозрачные ножны.",
+      "note_ru": "",
+      "gallery_number": "16",
+      "order": 16,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "7045f3bca510970ff5ef2b6ebf8df35fb42357a8237645ee801287e2eeb49491",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-equipment-enchanted-rapier.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 167856,
+          "sha256": "8465ca1082cd64dd38fe2fbc2c77e264f0b74439407ff8e26dad2c70c8d049df"
+        }
+      }
+    },
+    {
+      "id": "dwarf-equipment-frame-drum",
+      "category": "equipment",
+      "title_ru": "Бубен · предметный референс",
+      "alt_ru": "Плоский шаманский бубен с шестью стальными накладками и знаком расколотой короны.",
+      "note_ru": "",
+      "gallery_number": "17",
+      "order": 17,
+      "width": 1254,
+      "height": 1254,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "17de1e115774a7429dfe768255ce03a3de01ddf0f8aa05b8018cae20c007af00",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-equipment-frame-drum.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 389784,
+          "sha256": "fe213c7e59798c86dad747289e80bc61794f0a4f0e4edc35f01af0767fd62eb6"
+        }
+      }
+    },
+    {
+      "id": "dwarf-equipment-beater",
+      "category": "equipment",
+      "title_ru": "Колотушка · шесть рун",
+      "alt_ru": "Маленькая деревянная колотушка с мягкой овальной головкой, шестью рунами и двумя перьями.",
+      "note_ru": "",
+      "gallery_number": "18",
+      "order": 18,
+      "width": 1254,
+      "height": 1254,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "87a17e679fa7fd1ecf6c37c4d6246f288d0b47c10e944cc1afde63bffbbbc209",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-equipment-beater.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 277510,
+          "sha256": "f417d02ba26ac9f829df148513b8a5e54dc3b7edf21963d0e433120583fe8738"
+        }
+      }
+    },
+    {
+      "id": "dwarf-equipment-small-items",
+      "category": "equipment",
+      "title_ru": "Кинжал, мешочек и кольцо",
+      "alt_ru": "Компактный кинжал, затянутый кожаный мешочек и тонкое кольцо с одним камнем.",
+      "note_ru": "",
+      "gallery_number": "19",
+      "order": 19,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "09fe24ec603724131a5ae7daf3564a9c11342f52d40c68d014435f538ee41dfc",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-equipment-small-items.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 285710,
+          "sha256": "be37470602e8420526c524df7c8d25ba36ac54e20058c2ebea296a16bc961ba2"
+        }
+      }
+    },
+    {
+      "id": "dwarf-hands-and-grips",
+      "category": "equipment",
+      "title_ru": "Кисти и хваты · восемь видов",
+      "alt_ru": "Восемь видов металлических кистей и хватов Последнего Дварфа.",
+      "note_ru": "",
+      "gallery_number": "20",
+      "order": 20,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "e584fcdb0c9f1d08c32a3c447a372f4adb7dd0972be0682bc765542a39a56b25",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-hands-and-grips.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 340568,
+          "sha256": "9fd84b26478274dd6b079c8fc008a563aad4d59427a69d41e494e16a1caac07f"
+        }
+      }
+    },
+    {
+      "id": "dwarf-scene-01-road",
+      "category": "scenes",
+      "title_ru": "После дождя",
+      "alt_ru": "Последний Дварф идёт по мокрой городской улице под каменной аркой; руки свободны, рапиры в ножнах.",
+      "note_ru": "Руки свободны. Обе рапиры в ножнах на поясе, направлены назад.",
+      "gallery_number": "21",
+      "order": 21,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "d625533f9fe04ed718e24e00a52824ece7ab13932c6ddf14e67261cd9a8c1653",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-scene-01-road.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 322242,
+          "sha256": "258daa0220cd7e9ac8b472e2abe58c3961a121d981035e9ea1cfb6aa6a4458a6"
+        }
+      }
+    },
+    {
+      "id": "dwarf-scene-02-tavern",
+      "category": "scenes",
+      "title_ru": "Разговор в таверне",
+      "alt_ru": "Последний Дварф разговаривает за столом в таверне при свете лампы.",
+      "note_ru": "Правая рука жестикулирует, левая лежит на столе. Бубен за спиной на плечевых ремнях.",
+      "gallery_number": "22",
+      "order": 22,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "1a010695d9394d34c3624e52070f96556332c152fccb207ed6e60b8fb952ed11",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-scene-02-tavern.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 319118,
+          "sha256": "a1b5f6db263338b7064404bde83762c1696892686f347b3d9b5b2779ff122d4e"
+        }
+      }
+    },
+    {
+      "id": "dwarf-scene-03-music",
+      "category": "scenes",
+      "title_ru": "Музыка у костра",
+      "alt_ru": "Последний Дварф у костра держит бубен правой рукой, колотушку левой; рапиры остаются на поясе.",
+      "note_ru": "Бубен в правой руке, колотушка в левой. Обе рапиры остаются в ножнах.",
+      "gallery_number": "23",
+      "order": 23,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "b37626ab230c079bffe906f457ac9fca83e0034463433876bec82ad17f908bfb",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-scene-03-music.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 298292,
+          "sha256": "952e61784d74b68f096de8e7668a417183472123feb1cf92d2774849c70e06b1"
+        }
+      }
+    },
+    {
+      "id": "dwarf-scene-04-guard",
+      "category": "scenes",
+      "title_ru": "Защитить проход",
+      "alt_ru": "Последний Дварф защищает каменный проход, держа обычную рапиру справа и зачарованную слева.",
+      "note_ru": "Обычная рапира в правой руке, зачарованная в левой. Пустые ножны остаются на поясе.",
+      "gallery_number": "24",
+      "order": 24,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "2c548d5082186cffa42d5527684447641318cf05bbb0ada408d73f6230fa0cb1",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-scene-04-guard.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 315594,
+          "sha256": "36928dfb9b1641218a186ace0cca93f5dd94b02525cf88a5be1f107bbeed0312"
+        }
+      }
+    },
+    {
+      "id": "dwarf-scene-05-watch",
+      "category": "scenes",
+      "title_ru": "Дозор у гавани",
+      "alt_ru": "Последний Дварф на дозоре у гавани, обеими кистями опирается на каменный парапет.",
+      "note_ru": "Обе кисти опираются на камень. Рапиры на поясе, нижняя часть снаряжения скрыта парапетом.",
+      "gallery_number": "25",
+      "order": 25,
+      "width": 1536,
+      "height": 1024,
+      "character_id": "dwarf",
+      "status": "included-in-current-package",
+      "source_sha256": "d9647061959a9b2bddef5fb3ae4f0b93029422f2b1ff207e39c67a6ee467f07e",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/dwarf/dwarf-scene-05-watch.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 289076,
+          "sha256": "7280cc95c9a40b444e9c8edf06979165f70b90c9ea0fe84e8ee019903dd6343a"
+        }
+      }
+    }
+  ]
+}

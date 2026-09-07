@@ -1,0 +1,315 @@
+{
+  "character_id": "shmyg",
+  "character_name_ru": "Шмыг",
+  "images": 19,
+  "formats": [
+    "webp"
+  ],
+  "renditions": 19,
+  "assets": [
+    {
+      "id": "master-formal",
+      "title_ru": "Основной MASTER · формальный",
+      "alt_ru": "Шмыг. Основной референс идентичности. Одна пара солнечных очков, жёсткая манишка, полный рост.",
+      "category": "master",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "c62ec9637740f488f7f2997632101c7092deb0b393e88bf4f0a612e316b8a684",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-master-formal-sunglasses.webp",
+          "size_bytes": 253186,
+          "sha256": "d1771523bf7caf1f66caf5326c521fe7923a050bd58007fddd1906b8b6797144"
+        }
+      }
+    },
+    {
+      "id": "master-straw-bare",
+      "title_ru": "Дополнительный MASTER · шляпа без очков",
+      "alt_ru": "Шмыг. Тот же Шмыг в повседневной одежде, соломенной шляпе, с открытыми глазами.",
+      "category": "master",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "19982e3cb72548c4cfbc2bbd9d472a246da3e86ac1d1e2b6085b774cdbb89bb0",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-master-casual-straw-no-glasses.webp",
+          "size_bytes": 203020,
+          "sha256": "ee2d9c32c9bd70ae74988d757887c77f520354a1ae08abf6078da066cfa2a641"
+        }
+      }
+    },
+    {
+      "id": "casual-sunglasses",
+      "title_ru": "Повседневный · шляпа и очки",
+      "alt_ru": "Шмыг. Просторная рубаха и брюки, плетёная соломенная шляпа и одна пара очков.",
+      "category": "wardrobe",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "af44cd79634ff20dc7e253696009ffded4c8cd5f15c8998eaf498c8c818ba069",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-casual-straw-sunglasses.webp",
+          "size_bytes": 185552,
+          "sha256": "eda4fcf3648c61df390d59d4a12bf493aced53000c8858381457f566d844faa4"
+        }
+      }
+    },
+    {
+      "id": "hunting",
+      "title_ru": "Охотничий · капюшон",
+      "alt_ru": "Шмыг. Оливковая туника, коричневая накидка и глубокий капюшон, который он придерживает у очков.",
+      "category": "wardrobe",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "ba2361f17944e88b9c09fc12a7807c50845ac8a17bc36907dd974819f56a38e2",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-hunting-hood-sunglasses.webp",
+          "size_bytes": 226470,
+          "sha256": "34457ccf5283e243c9eefcb376efd4c8d10b23e474a9cf53e9abcfada1ea8fce"
+        }
+      }
+    },
+    {
+      "id": "guard",
+      "title_ru": "Стражник главы 8 · копьё",
+      "alt_ru": "Шмыг. Ранний хронологический образ: лохмотья, разномастная кожаная защита, слишком длинное копьё.",
+      "category": "wardrobe",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "fea155d6a37fd935349acec800cbc68f7a6d41753025a3d19978dbd7c5d32f41",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-guard-ch08-spear.webp",
+          "size_bytes": 311876,
+          "sha256": "44349ee7276a96ff0093b1425f5ec1fa61c97ea8561936f1b7e891dacddd10d6"
+        }
+      }
+    },
+    {
+      "id": "formal-front",
+      "title_ru": "Формальный · анфас",
+      "alt_ru": "Шмыг. Прямой вид спереди в полный рост.",
+      "category": "formal",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "bfe7a2a117c34f9a8efdd51d57ff82b0f1adf2ca837327722578a3f079465e60",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-formal-front.webp",
+          "size_bytes": 226362,
+          "sha256": "02251f99c4bbb7b3a1387e26bbefcabfb2560e5c85eb1c9417a57895562410fd"
+        }
+      }
+    },
+    {
+      "id": "formal-left",
+      "title_ru": "Формальный · профиль влево",
+      "alt_ru": "Шмыг. Строгий профиль: нос направлен влево на изображении.",
+      "category": "formal",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "3cddc372104455cdb71ef2f55de4c81500301a537d7e25ae382722766d6d391a",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-formal-profile-facing-left.webp",
+          "size_bytes": 209226,
+          "sha256": "7db3393db1ed17defd480bb16f535eb479ef0acd573f037e3ece205c737e02f2"
+        }
+      }
+    },
+    {
+      "id": "formal-back",
+      "title_ru": "Формальный · спина",
+      "alt_ru": "Шмыг. Прямой вид сзади. На затылке нет запасных очков или ремней.",
+      "category": "formal",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "0956c6bfb43d34f070083354611fe9cdbc1f0f2ad37004c5087a45a3f77f9978",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-formal-back.webp",
+          "size_bytes": 206882,
+          "sha256": "f109885b539b49bf58374197336e6b705d1c0a7f6b4072eeccb01cbd0603f6b3"
+        }
+      }
+    },
+    {
+      "id": "formal-right",
+      "title_ru": "Формальный · профиль вправо",
+      "alt_ru": "Шмыг. Строгий профиль: нос направлен вправо на изображении.",
+      "category": "formal",
+      "width": 1086,
+      "height": 1448,
+      "source_sha256": "317e6fafb48f5eef439d847dfd9a44e36c0f1b57ce8478f373438893691392a7",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-formal-profile-facing-right.webp",
+          "size_bytes": 188772,
+          "sha256": "a8cc43a3834f9675cec28b08a25b3c04d45d44c1278bbc3b08fee087e131bb6f"
+        }
+      }
+    },
+    {
+      "id": "formal-details",
+      "title_ru": "Формальный · лицо, уши, кисти",
+      "alt_ru": "Шмыг. Лицо в двух ракурсах, положения ушей, ладонь и тыльная сторона кисти.",
+      "category": "formal",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "89c0082cc01514a6de70489fb72736569c0eec12661082694d8749503e97c689",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-formal-face-ears-hands.webp",
+          "size_bytes": 342738,
+          "sha256": "ffb2cc36b6d98bd0909a60283cb8b5f6f92d0a904bd4747f2379d0ef5bb90839"
+        }
+      }
+    },
+    {
+      "id": "straw-turnaround",
+      "title_ru": "Шляпа без очков · четыре стороны",
+      "alt_ru": "Шмыг. Исправленный лист: анфас, профиль влево, спина, профиль вправо.",
+      "category": "straw",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "13c074904207669bae15240a217fb51c41c39c7386bc664cd04cd406f7b544d6",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-straw-no-glasses-turnaround.webp",
+          "size_bytes": 263546,
+          "sha256": "34d02fb1c6a90ef750c2918e178c3a8360cbb4dc53be0796c741181e28a3d2ca"
+        }
+      }
+    },
+    {
+      "id": "straw-details",
+      "title_ru": "Шляпа без очков · разные крупности",
+      "alt_ru": "Шмыг. Поясной портрет, лицо, профиль, глаза и нос, ухо и плетение шляпы.",
+      "category": "straw",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "32224a5730e2246db2f960897ecbeec047c7e3d00a2bbbf5c820f103478c1375",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-straw-no-glasses-closeups.webp",
+          "size_bytes": 346458,
+          "sha256": "3cd9565d7cb38a905ad91bf75bdc57f589a62a2817919f587c858fd098c31253"
+        }
+      }
+    },
+    {
+      "id": "straw-poses",
+      "title_ru": "Шляпа без очков · три позы",
+      "alt_ru": "Шмыг. Важный шаг, неподвижное слушание, быстрый настороженный разворот.",
+      "category": "straw",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "2a77fd65ee8784431ab7514e72d074397c581a6baa429c4a37314806bab7e9c4",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-straw-no-glasses-three-poses.webp",
+          "size_bytes": 373772,
+          "sha256": "2f115eb13d025ce88b98ff4310e109519643fd4c95378caabd5af6c988ae8edb"
+        }
+      }
+    },
+    {
+      "id": "straw-emotions",
+      "title_ru": "Шляпа без очков · шесть эмоций",
+      "alt_ru": "Шмыг. Важность, подозрение, удивление; возмущение, радость, смущение.",
+      "category": "straw",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "4df1e0153facbde28d8356cda3f721c769d06283c9e25319d6ed51bd65edb624",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-straw-no-glasses-six-emotions.webp",
+          "size_bytes": 376232,
+          "sha256": "bcdff3f7846386b331809664968eab89271d9e8fc58868567b26d5af70a9ee00"
+        }
+      }
+    },
+    {
+      "id": "scene-tunnel",
+      "title_ru": "01 · Важный проход по тоннелю",
+      "alt_ru": "Шмыг. Один Шмыг-стражник в пустом тоннеле, с длинным копьём.",
+      "category": "scenes",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "23b2047fb20e2ca8abd012eb664f98c99b2decf84a93aafa96a131f2e464cf1d",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-scene-01-tunnel-guard.webp",
+          "size_bytes": 437734,
+          "sha256": "984575a6927dfb02f9ee26eaaab009a46a4dd1e1d84d06687c9a75b1fd4c9e8d"
+        }
+      }
+    },
+    {
+      "id": "scene-listening",
+      "title_ru": "02 · Слушает голос за кадром",
+      "alt_ru": "Шмыг. Средний план: неподвижно слушает, белое полотенце через локоть.",
+      "category": "scenes",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "7a0b7d77ba6d333cf329d26fd9b9e17e0fe85a060a0752839f02a191969b62ef",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-scene-02-listening-towel.webp",
+          "size_bytes": 226338,
+          "sha256": "fe3c17886804055fbd24312a56e277e2e6743b6b40b3e2f8d7f4857a39960f57"
+        }
+      }
+    },
+    {
+      "id": "scene-registration",
+      "title_ru": "03 · Регистрация в управе",
+      "alt_ru": "Шмыг. Один Шмыг заполняет оставленные на столе бумаги.",
+      "category": "scenes",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "2b49ed621a80d910d93f7bbf7f6f67fca07d166e3979eab303ecfc64670aade9",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-scene-03-registration.webp",
+          "size_bytes": 261216,
+          "sha256": "1969b875962fe3e27e8020fc9476bdf9104ffbf52dc57453295984517f216018"
+        }
+      }
+    },
+    {
+      "id": "scene-letters",
+      "title_ru": "04 · Крупные инфернальные буквы",
+      "alt_ru": "Шмыг. Близкий план: учится писать, в соломенной шляпе без очков.",
+      "category": "scenes",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "cbf39fe616e30b12af65a7f47f1f4234e015ab8226797d322bd664260bd56366",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-scene-04-infernal-letters.webp",
+          "size_bytes": 276626,
+          "sha256": "bd8c10aa4ba9f1acc02ef6c3aaaebbcd081e29e685d35755d1d05d95979bb709"
+        }
+      }
+    },
+    {
+      "id": "scene-breakfast",
+      "title_ru": "05 · Завтрак, метла и сок",
+      "alt_ru": "Шмыг. Ростовой сюжет: накрывает стол, рядом метла и кувшин апельсинового сока.",
+      "category": "scenes",
+      "width": 1536,
+      "height": 1024,
+      "source_sha256": "afb63a02ad59c231c656c9cbb797acf9f99c0c5f3002ea24b4ff6d6326f6433e",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/shmyg/shmyg-scene-05-breakfast.webp",
+          "size_bytes": 351798,
+          "sha256": "127b9f4e520691204c4488068ccded652fe45483fc62a24e44b57440d6d848ab"
+        }
+      }
+    }
+  ]
+}
