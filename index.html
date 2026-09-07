@@ -17,6 +17,8 @@
  #r-lica .l-canon--complete .l-canon__i{flex:0 0 78vw;max-width:none;scroll-snap-align:center}
 }
 </style>
+
+
 </head>
 <body style="margin:0">
 <style>
@@ -2844,6 +2846,92 @@ html.m-full, html.m-full body{overflow:hidden}#r-karta /* число масшт�
 
 .route[hidden]{display:none!important}
 </style>
+<style id="book-reader-update">
+#r-kniga .b-mode{display:flex;gap:3px;padding:3px;border:1px solid var(--line-soft);border-radius:4px;background:#15102c}
+#r-kniga .b-mode button{min-height:44px;padding:9px 15px;border:0;border-radius:2px;background:transparent;color:var(--ink-mid);font:inherit;font-family:var(--kap);cursor:pointer}
+#r-kniga .b-mode button[aria-pressed="true"]{background:#ead4a0;color:#302317}
+#r-kniga .b-mode button:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+#r-kniga .b-page,#r-kniga .b-face{background-image:radial-gradient(130% 90% at 28% 8%,rgba(255,255,255,.4),transparent 62%),var(--page-marks,none),linear-gradient(168deg,#f2e7cb,#e7d9b6);background-size:auto,100% 100%,auto}
+#r-kniga .b-cap__orn{border:1px solid #9b7944;border-radius:48% 48% 3px 3px;background:radial-gradient(ellipse at 50% 35%,#fff4d8,#dcc59b);box-shadow:inset 0 0 0 4px #efe0bd,inset 0 0 0 5px #b99a63}
+#r-kniga .b-book{user-select:text;-webkit-user-select:text}
+#r-kniga .b-flip{display:none;width:50%;transform-style:preserve-3d;isolation:auto;pointer-events:none}
+#r-kniga .b-face{background-color:#ece0c1;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+#r-kniga .b-face--front{transform:rotateY(0deg) translateZ(.2px)}
+#r-kniga .b-face--back{transform:rotateY(180deg) translateZ(.2px)}
+#r-kniga .b-face .b-pg{backface-visibility:inherit}
+#r-kniga .b-book{border-radius:4px 8px 8px 4px;box-shadow:0 8px 0 -2px #aa9367,0 13px 0 -3px #786044,0 18px 0 -4px #392836,0 32px 50px -22px #000}
+#r-kniga .b-spread::after{content:'';position:absolute;top:0;bottom:0;left:50%;width:30px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#6c512733,transparent);z-index:2;pointer-events:none}
+@media(max-width:1280px){#r-kniga .b-flip{width:100%}#r-kniga .b-book{overflow:hidden}#r-kniga .b-spread::after{display:none}}
+@media(prefers-reduced-motion:reduce){#r-kniga .b-flip{display:none!important}}
+html.is-calm #r-kniga .b-flip{display:none!important}
+#r-kniga .b-pg{overflow-wrap:break-word}
+#r-kniga .b-pg [data-book-block]{scroll-margin-top:calc(var(--reader-top,80px) + var(--reader-bar-height,120px) + 20px)}
+#r-kniga .b-flow{--paper-ink:#2a2317;--paper-dim:#51432c;--paper-line:rgba(122,96,52,.3);--paper-blood:#8b2e25;--paper-kap:#63532e;max-width:860px;margin:0 auto;color:var(--paper-ink);border:1px solid #b39b69;background:linear-gradient(105deg,#e7d8b4,#f4ead1 17%,#f5ecd5 78%,#e6d7b1);box-shadow:0 26px 70px -30px #000}
+#r-kniga .b-flow .b-pg{position:relative;inset:auto;max-width:none;margin:0;padding:48px 0 20px;overflow:visible;--fs-read:22px;line-height:1.65;text-align:left}
+#r-kniga .b-flow-section{padding:1px clamp(24px,6vw,76px);background-size:100% 100%;background-repeat:no-repeat;display:flow-root}
+#r-kniga .b-flow .b-pg p{margin-bottom:1em;text-indent:0}
+#r-kniga .b-flow .b-pg figure{margin:2.2em 0;--plate:660px}
+#r-kniga .b-flow .b-pg figure img{max-width:100%;max-height:80svh;width:auto;height:auto}
+#r-kniga .b-flow .b-open{margin-bottom:2em}
+#r-kniga .b-flow .b-open__t{font-size:clamp(30px,4vw,44px);overflow-wrap:anywhere}
+#r-kniga .b-flow-nav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding:28px clamp(24px,6vw,76px);border-top:1px solid var(--paper-line)}
+#r-kniga .b-flow-nav button{white-space:normal;line-height:1.5}
+#r-kniga [hidden]{display:none!important}
+#r-kniga .is-flow .b-bar{position:sticky;top:var(--reader-top,80px);z-index:20;background:#17112d;box-shadow:0 6px 24px #0003}
+#r-kniga .is-flow .b-wrap{max-width:1040px}
+@media(max-width:1280px){#r-kniga .b-spread{grid-template-columns:minmax(0,1fr)}#r-kniga .b-page--r{display:none}}
+@media(max-width:900px){
+ #r-kniga .b-bar{padding:12px 16px;gap:10px}
+ #r-kniga .b-bar__title{font-size:22px;overflow-wrap:anywhere}
+ #r-kniga .b-bar__meta{display:none}
+ #r-kniga .b-ctl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+ #r-kniga .b-mode{flex:1 0 100%}
+ #r-kniga .b-mode button{flex:1}
+ #r-kniga .b-wrap{width:100%;padding-inline:12px}
+ #r-kniga .b-flow .b-pg{--fs-read:20px;padding-top:30px;line-height:1.6}
+ #r-kniga .b-flow-section{padding-inline:clamp(20px,5.5vw,36px)}
+ #r-kniga .b-flow-nav{padding:24px 20px;flex-direction:column}
+ #r-kniga .b-flow-nav button{width:100%}
+ #r-kniga .b-dust{display:none}
+ #r-kniga .b-spread{height:clamp(570px,76svh,820px)}
+ #r-kniga .b-pg{inset:24px 22px 52px;text-align:left}
+ #r-kniga .b-row__in{grid-template-columns:minmax(0,1fr);padding-left:20px}
+ #r-kniga .b-hero__grid,#r-kniga .b-limb__grid{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:400px){#r-kniga .b-wrap{padding-inline:6px}#r-kniga .b-flow-section{padding-inline:18px}}
+
+/* Continuous reading: an illuminated chronicle, with quiet margins around the text. */
+#r-kniga .b-flow{position:relative;border:0;border-radius:7px 3px 9px 4px;background:radial-gradient(ellipse at 15% 0%,#f9f0d8,transparent 48%),linear-gradient(90deg,#d4bd8d 0,#eee0bd 2%,#f5ebd2 8%,#f4e9ce 92%,#e2cfa5 99%,#bba070);box-shadow:0 0 0 1px #cfb785,0 5px 0 -1px #bd9e68,0 10px 0 -3px #7b623f,0 28px 65px -22px #000}
+#r-kniga .b-flow::before{content:'';position:absolute;inset:10px 12px;border-left:1px solid #9e794329;border-right:1px solid #9e794329;pointer-events:none}
+#r-kniga .b-flow .b-pg{padding-top:0}
+#r-kniga .b-flow .b-open{position:relative;isolation:isolate;padding:56px 18px 38px;margin:0 -20px 44px;border-bottom:1px solid #ab89535c;background:radial-gradient(ellipse at 50% 10%,#d6bf8f55,transparent 67%)}
+#r-kniga .b-flow .b-open::before,#r-kniga .b-flow .b-open::after{content:'✧';position:absolute;top:100px;color:#967043;font-size:30px;line-height:1}
+#r-kniga .b-flow .b-open::before{left:7%}
+#r-kniga .b-flow .b-open::after{right:7%}
+#r-kniga .b-flow .b-open__n{position:relative;display:grid;place-items:center;width:110px;height:110px;margin:0 auto 30px;border:1px solid #a17b47;border-radius:50%;font-size:42px;background:radial-gradient(circle,transparent 57%,#a17b4733 58%,transparent 59%,transparent 66%,#a17b474d 67%,transparent 68%);box-shadow:0 0 0 7px #ead7b12b,0 0 0 8px #a17b4733}
+#r-kniga .b-flow .b-open__n::before{content:'';position:absolute;inset:14px;border:1px solid #a17b4750;transform:rotate(45deg);z-index:-1}
+#r-kniga .b-flow .b-open__t{max-width:15ch;margin:0 auto 22px;line-height:1.17;font-size:clamp(34px,4vw,52px)}
+#r-kniga .b-flow .b-open__s{max-width:38ch;margin:auto;line-height:1.75}
+#r-kniga .b-flow .scene-note{position:relative;margin:2.4em 0 1.6em;padding:22px 20px 20px 24px;border-left:2px solid #8f512b;background:linear-gradient(110deg,#c5a16a21,transparent 85%)}
+#r-kniga .b-flow .scene-note::before{content:attr(data-scene-label);display:block;margin-bottom:10px;font:500 11px/1.4 var(--kap);text-transform:uppercase;letter-spacing:.22em;color:#936e3a}
+#r-kniga .b-flow .scene-note::after{content:'';position:absolute;left:-5px;top:22px;width:7px;height:7px;background:#a96d3f;transform:rotate(45deg)}
+#r-kniga .b-flow .b-pg .sn-place{letter-spacing:.08em;font-size:14px;line-height:1.5}
+#r-kniga .b-flow .b-pg .sn-note{font-size:19px;line-height:1.55;margin-top:9px}
+#r-kniga .b-flow .b-pg figure{position:relative;padding:20px 12px 14px;background:#fff6df66;border:1px solid #b99a6155;box-shadow:0 8px 20px -16px #594121}
+#r-kniga .b-flow .b-pg figure::before{content:'✦';position:absolute;top:-12px;left:calc(50% - 18px);width:36px;color:#a1793d;background:#efe1be;font-size:18px;text-align:center}
+#r-kniga .b-flow .b-pg figcaption{margin-top:15px;padding:0 4px;font-size:17px;line-height:1.5}
+#r-kniga .b-flow .b-pg .brk{color:#ae8551;margin:1.8em 0}
+#r-kniga .b-flow-nav{padding-block:38px;background:linear-gradient(0deg,#c9ac7533,transparent)}
+@media(max-width:900px){
+ #r-kniga .b-flow .b-open{padding:36px 5px 30px;margin:0 0 30px}
+ #r-kniga .b-flow .b-open::before,#r-kniga .b-flow .b-open::after{top:70px;font-size:22px}
+ #r-kniga .b-flow .b-open__n{width:84px;height:84px;font-size:34px;margin-bottom:28px}
+ #r-kniga .b-flow .b-open__t{font-size:34px}
+ #r-kniga .b-flow .scene-note{padding:18px 12px 18px 18px}
+ #r-kniga .b-flow .b-pg figure{margin-inline:0;padding:16px 8px 12px}
+ #r-kniga .b-flow::before{inset-inline:7px}
+}
+</style>
 <section class="route" id="r-index" hidden>
 
 <canvas class="k-field-bg" id="fieldBg" aria-hidden="true"></canvas>
@@ -3218,7 +3306,7 @@ html.m-full, html.m-full body{overflow:hidden}#r-karta /* число масшт�
     <div class="k-sec-head">
       <span class="k-sec-head__n">III</span>
       <h2>Читалка</h2>
-      <p class="k-sec-head__sub">Стрелки и пробел листают · на телефоне — свайп</p>
+      <p class="k-sec-head__sub" id="readerHint">Выберите удобный способ чтения</p>
     </div>
   </div>
 
@@ -3232,7 +3320,10 @@ html.m-full, html.m-full body{overflow:hidden}#r-karta /* число масшт�
         <p class="b-bar__meta" id="rMeta"></p>
       </div>
       <div class="b-ctl">
-        <button class="k-btn k-btn--ghost" type="button" id="paper" aria-pressed="false">Ночь</button>
+        <div class="b-mode" id="readingMode" role="group" aria-label="Формат чтения">
+          <button type="button" data-mode="pages" aria-pressed="true">Страницы</button>
+          <button type="button" data-mode="text" aria-pressed="false">Текст</button>
+        </div>
         <button class="k-icon-btn" type="button" id="prev" aria-label="Предыдущий разворот" disabled>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg>
@@ -3246,6 +3337,7 @@ html.m-full, html.m-full body{overflow:hidden}#r-karta /* число масшт�
     </div>
 
     <div class="b-prog"><i id="bar"></i></div>
+    <article class="b-flow" id="flow" aria-labelledby="rTitle" hidden><div class="b-pg" id="flowBody"></div><nav class="b-flow-nav" aria-label="Главы"><button class="k-btn" id="flowPrev" type="button">Предыдущая глава</button><button class="k-btn" id="flowNext" type="button">Следующая глава</button></nav></article>
 
     <div class="b-stage">
       <div class="b-ribbon k-orn" id="ribL" aria-hidden="true"></div>
@@ -7239,57 +7331,42 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
   /* ---- бумага: чернильные пятна, потёртости и след от чашки по полям ----
      Печём два листа — для пергамента и для ночи. Пятна стоят по краям
      и в углах, полоса набора остаётся чистой. */
-  function bakePaper() {
-    var W = 620, H = 860;
-    function sheet(night) {
-      var ink = night ? [[0, '#c9a45c', .26], [.6, '#8c5d9e', .18], [1, '#3a4fbe', .10]]
-                      : [[0, '#3c2410', .34], [.55, '#5b3a1c', .22], [1, '#3c2410', .10]];
-      var faint = night ? [[0, '#f0d79a', .10], [1, '#8c5d9e', .05]]
-                        : [[0, '#6b4a22', .11], [1, '#8b5a2b', .05]];
-      var lineC = night ? '#c9a45c' : '#6b4a22';
-      var out = [];
-      /* крупная клякса в левом верхнем углу с брызгами */
-      out.push(E.grainy(stainPath(52, 64, 34, 11, 11, .55), ink, 'fig2'));
-      out.push(E.grainy(stainPath(50, 62, 22, 15, 9, .5), ink, false));
-      out.push(E.grainy(stainPath(96, 40, 6, 12, 7, .6) + stainPath(104, 82, 4, 13, 7, .6)
-        + stainPath(28, 118, 5, 14, 7, .6) + stainPath(88, 100, 2.6, 16, 6, .5)
-        + stainPath(70, 22, 2.2, 17, 6, .5), ink, false));
-      /* тонкий развод чернил, стекавших к обрезу */
-      out.push(E.gold(E.path.smoothOpen([[62, 92], [58, 130], [66, 168], [60, 210]], 1), { sw: 1.2, off: 0, op: .2 }));
-      /* размытое пятно от сырости внизу справа — едва заметное, широкое */
-      out.push(E.grainy(stainPath(W - 60, H - 96, 92, 21, 13, .40), [[0, faint[0][1], .06], [1, faint[1][1], .03]], 'soft'));
-      /* след от чашки у нижнего поля — кофейное кольцо, не золото */
-      var ring = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-      ring.setAttribute('d', ringStain(150, H - 70, 44, 31));
-      ring.setAttribute('fill', 'none');
-      ring.setAttribute('stroke', night ? '#c9a45c' : '#5b3a1c');
-      ring.setAttribute('stroke-width', '3.4');
-      ring.setAttribute('stroke-opacity', night ? '.24' : '.20');
-      ring.setAttribute('stroke-linecap', 'round');
-      out.push(E.grainy(ring, faint, 'fig2'));
-      /* потёртости — короткие царапины по краю */
-      var rnd = E.path.rng(77), d = '';
-      for (var i = 0; i < 26; i++) {
-        var x = rnd() < 0.5 ? 6 + rnd() * 26 : W - 6 - rnd() * 26, y = 20 + rnd() * (H - 40);
-        var l = 4 + rnd() * 14, ang = (rnd() - 0.5) * 1.2;
-        d += E.path.line(x, y, x + Math.cos(ang) * l, y + Math.sin(ang) * l);
+  // A page's marks belong to its chapter and page, not to the screen slot.
+  var paperCache = new Map();
+  function paperFor(chapter, page) {
+    var key = chapter + ':' + page;
+    if (paperCache.has(key)) return paperCache.get(key);
+    var rnd = E.path.rng((chapter + 1) * 7919 + (page + 1) * 104729);
+    var cv = window.document.createElement('canvas'); cv.width = 480; cv.height = 660;
+    var ctx = cv.getContext('2d'), w = cv.width, h = cv.height;
+    var count = 1 + Math.floor(rnd() * 5);
+    for (var i = 0; i < count; i++) {
+      var edge = Math.floor(rnd() * 4), x = rnd() * w, y = rnd() * h;
+      if (edge === 0) x = rnd() * 24 - 8;
+      if (edge === 1) x = w - rnd() * 24 + 8;
+      if (edge === 2) y = rnd() * 22 - 8;
+      if (edge === 3) y = h - rnd() * 28 + 8;
+      var radius = 12 + rnd() * 56;
+      ctx.save(); ctx.translate(x, y); ctx.rotate(rnd() * Math.PI * 2); ctx.scale(.7 + rnd() * .9, .55 + rnd() * .8);
+      var grad = ctx.createRadialGradient(0, 0, 1, 0, 0, radius);
+      grad.addColorStop(0, 'rgba(91,55,24,' + (.08 + rnd() * .13) + ')'); grad.addColorStop(1, 'rgba(91,55,24,0)');
+      ctx.fillStyle = grad; ctx.beginPath();
+      for (var k = 0; k < 16; k++) {
+        var a = k / 16 * Math.PI * 2, rr = radius * (.65 + rnd() * .35);
+        if (!k) ctx.moveTo(Math.cos(a) * rr, Math.sin(a) * rr); else ctx.lineTo(Math.cos(a) * rr, Math.sin(a) * rr);
       }
-      out.push(E.gold(d, { sw: .7, off: 0, op: .35 }));
-      /* линия сгиба у корешка и точечки */
-      out.push(E.dust({ x: 0, y: 0, w: W, h: H, seed: 505, count: 40, r: .9, color: lineC, color2: lineC, op: .35 }));
-      return out;
+      ctx.closePath(); ctx.fill();
+      if (rnd() > .48) { ctx.strokeStyle = 'rgba(90,52,23,.14)'; ctx.lineWidth = .5 + rnd() * 2; ctx.beginPath();ctx.arc(0,0,radius*.8,rnd(),Math.PI*(1.2+rnd()*.7));ctx.stroke(); }
+      ctx.restore();
     }
-    function mirror(nodes) {
-      var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-      g.setAttribute('transform', 'translate(' + W + ' 0) scale(-1 1)');
-      nodes.forEach(function (n) { g.appendChild(n); });
-      return g;
-    }
-    setVar('--b-stains-day', bakeURI(W, H, sheet(false)));
-    setVar('--b-stains-day-r', bakeURI(W, H, [mirror(sheet(false))]));
-    setVar('--b-stains-night', bakeURI(W, H, sheet(true)));
-    setVar('--b-stains-night-r', bakeURI(W, H, [mirror(sheet(true))]));
+    ctx.fillStyle = 'rgba(95,68,31,.12)';
+    for (var n = 0; n < 22 + rnd() * 28; n++) { var px = rnd() < .5 ? rnd()*24 : w-rnd()*24; ctx.fillRect(px,rnd()*h,.5+rnd()*1.2,.5+rnd()*2); }
+    var uri = cv.toDataURL('image/png'); paperCache.set(key, uri);
+    if (paperCache.size > 80) paperCache.delete(paperCache.keys().next().value);
+    return uri;
   }
+  function bakePaper() {} // Page backgrounds are prepared on demand, without SVG filters.
+
 
   /* ---- колонтитул: виньетка-лавр по обе стороны от номера ---- */
   function bakeVignette() {
@@ -7473,22 +7550,9 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
   var CAP_DAY = [[0, '#f8efd6', .96], [.46, '#e9d7ac', .95], [1, '#c8ab7c', .94]];
   var CAP_NIGHT = [[0, '#332a6e', .95], [.5, '#1e1750', .95], [1, '#100c30', .95]];
   function drawCaps(root) {
-    var night = document.body.classList.contains('is-night');
-    $$('.b-cap i', root).forEach(function (slot) {
-      if (slot.firstChild) return;
-      var W = 62, H = 66, s = E.svg({ w: W, h: H });
-      s.style.width = '100%'; s.style.height = '100%'; s.style.display = 'block';
-      var d = E.path.archPath(3, 2, W - 6, H - 5, (W - 6) / 2);
-      s.appendChild(E.grainy(d, night ? CAP_NIGHT : CAP_DAY, 'fig'));
-      /* орнамент за буквой: розетка-солнце, тонкая арка внутри и искры по низу */
-      s.appendChild(E.gold(E.path.rosette(W / 2, H * 0.42, 19, 12, { outer: false })
-        + E.path.archPath(9, 8, W - 18, H - 17, (W - 18) / 2)
-        + E.path.spark4(9, H - 9, 3.4) + E.path.spark4(W - 9, H - 9, 3.4)
-        + E.path.line(14, H - 9, W - 14, H - 9), { sw: .7, off: .5, op: .55 }));
-      s.appendChild(E.gold(d, { sw: 1.1, off: .8 }));
-      slot.appendChild(s);
-    });
+    $$('.b-cap i', root).forEach(function(slot) { slot.className = 'b-cap__orn'; });
   }
+
 
   /* ---------- пагинация ---------- */
   function probe() {
@@ -7567,7 +7631,7 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
       var ss = (n.tagName === 'P' && filled < 0.82) ? sentences(n.innerHTML) : null;
       if (ss) {
         var head = document.createElement('p');
-        head.className = n.className;
+        head.className = n.className;head.dataset.bookBlock=n.dataset.bookBlock;
         pr.appendChild(head);
         var used = 0;
         for (var i = 0; i < ss.length; i++) {
@@ -7578,7 +7642,7 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
         }
         if (used > 0 && used < ss.length) {
           var tail = document.createElement('p');
-          tail.className = 'cont';
+          tail.className = 'cont';tail.dataset.bookBlock=n.dataset.bookBlock;
           tail.innerHTML = ss.slice(used).join(' ');
           queue.unshift(tail);
           out.push(pr.innerHTML); pr.innerHTML = '';
@@ -7601,19 +7665,29 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
   /* ---------- отрисовка разворота ---------- */
   function fill(el, no, i) {
     el.innerHTML = pages[i] || '';
+    el.parentElement.style.setProperty('--page-marks', 'url("' + paperFor(cur,i) + '")');
+    el.parentElement.dataset.pageIdentity = cur + ':' + i;
+    $$('img',el).forEach(function(im){ im.loading='eager';im.decoding='sync'; });
     no.textContent = pages[i] ? String(i + 1) : '';
     drawCaps(el);
   }
   /* обвязка: счётчик, полоса хода, доступность стрелок */
   function chrome() {
+    if (textMode()) {
+      elCount.textContent = (cur+1) + ' / ' + CH.length;
+      elPrev.disabled = cur <= 0;elNext.disabled = cur >= CH.length-1;
+      var box = flow.getBoundingClientRect();
+      elBar.style.transform = 'scaleX(' + Math.max(0, Math.min(1,(window.innerHeight-box.top)/Math.max(1,box.height))) + ')';
+      return;
+    }
     var step = TWO() ? 2 : 1, i = spread * step;
     var total = Math.max(1, Math.ceil(pages.length / step));
     elBar.style.transform = 'scaleX(' + Math.min(1, (spread + 1) / total) + ')';
     elCount.textContent = pages.length
       ? (i + 1) + (TWO() && pages[i + 1] ? '–' + (i + 2) : '') + ' / ' + pages.length
       : '— / —';
-    elPrev.disabled = (spread <= 0 && cur <= 0);
-    elNext.disabled = (spread >= total - 1 && cur >= CH.length - 1);
+    elPrev.disabled = busy || (spread <= 0 && cur <= 0);
+    elNext.disabled = busy || (spread >= total - 1 && cur >= CH.length - 1);
   }
   function paint() {
     var step = TWO() ? 2 : 1, i = spread * step;
@@ -7621,88 +7695,147 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
     if (TWO()) fill(elR, elNoR, i + 1);
     else { elR.innerHTML = ''; elNoR.textContent = ''; }
     chrome();
+    prefetchNearby();
   }
 
-  /* Картинки нового разворота — в кэш заранее: полоса из-под листа
-     обнажается уже на трети поворота, ждать там декодирования нечем. */
-  var warmed = {};
-  function warm(html) {
-    if (!html) return;
-    var re = /<img[^>]+src="([^"]+)"/g, m;
-    while ((m = re.exec(html))) {
-      if (warmed[m[1]]) continue;
-      warmed[m[1]] = 1;
-      var im = new Image(); im.src = m[1];
+  var mobileReader = window.matchMedia('(max-width: 900px), (pointer: coarse)');
+  var modeKey = 'zhrebiy.reader.mode.' + (mobileReader.matches ? 'mobile' : 'desktop');
+  var readingMode = mobileReader.matches ? 'text' : 'pages';
+  try { var savedMode = localStorage.getItem(modeKey); if (savedMode === 'text' || savedMode === 'pages') readingMode = savedMode; } catch (_) {}
+  var chapterHTML = '', flow, flowBody, turnEpoch = 0, readyImages = new Map();
+  function textMode() { return readingMode === 'text'; }
+  function prepareHTML(html) {
+    var holder = window.document.createElement('div'); holder.innerHTML = html;
+    Array.prototype.forEach.call(holder.children, function (el, i) { el.dataset.bookBlock = i; });
+    return holder.innerHTML;
+  }
+  function currentBlock() {
+    var root = textMode() ? flowBody : elL;
+    if (!root) return 0;
+    var blocks = $$('[data-book-block]', root);
+    if (!textMode()) return blocks.length ? +blocks[0].dataset.bookBlock : 0;
+    var edge = $('.k-rail').offsetHeight + $('.b-bar').offsetHeight + 20;
+    var b = blocks.find(function (el) { return el.getBoundingClientRect().bottom > edge; });
+    return b ? +b.dataset.bookBlock : 0;
+  }
+  function syncModeUI() {
+    var reading = textMode(), reader = $('#reader');
+    reader.classList.toggle('is-flow', reading);
+    $('.b-stage', reader).hidden = reading; flow.hidden = !reading;
+    $$('#readingMode button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.mode === readingMode ? 'true' : 'false'); });
+    $('#readerHint').textContent = reading ? 'Читайте вниз · переход к следующей главе — в конце текста' : 'Стрелки ← → и пробел листают страницы';
+    $('.b-hint', reader).textContent = reading ? 'В конце текста — переход к следующей главе.' : 'На телефоне страницы также можно перелистывать свайпом.';
+    reader.style.setProperty('--reader-top', $('.k-rail').offsetHeight + 'px');
+    reader.style.setProperty('--reader-bar-height', $('.b-bar',reader).offsetHeight + 'px');
+    elPrev.setAttribute('aria-label', reading ? 'Предыдущая глава' : 'Предыдущие страницы');
+    elNext.setAttribute('aria-label', reading ? 'Следующая глава' : 'Следующие страницы');
+  }
+  function renderFlow(block) {
+    flowBody.innerHTML = chapterHTML;
+    var nodes = Array.prototype.slice.call(flowBody.children); flowBody.innerHTML = '';
+    for (var i = 0; i < nodes.length; i += 12) {
+      var section = window.document.createElement('div'); section.className = 'b-flow-section';
+      section.style.backgroundImage = 'url("' + paperFor(cur, i) + '")';
+      nodes.slice(i, i + 12).forEach(function (n) { section.appendChild(n); }); flowBody.appendChild(section);
     }
+    $$('img', flowBody).forEach(function (im) { im.loading = 'lazy'; im.decoding = 'async'; });
+    $$('.scene-note',flowBody).forEach(function(el,i){el.dataset.sceneLabel='Сцена '+roman(i+1);});
+    flow.dataset.chapter=CH[cur].key;
+    drawCaps(flowBody);
+    $('#flowPrev').disabled = cur <= 0; $('#flowNext').disabled = cur >= CH.length - 1;
+    $('#flowNext').textContent = cur < CH.length - 1 ? 'Следующая глава · ' + CH[cur + 1].title : 'Вы дочитали книгу';
+    chrome();
+    if (block != null) { var target = flowBody.querySelector('[data-book-block="' + block + '"]'); if (target) target.scrollIntoView({block:'start',behavior:'instant'}); }
   }
-
-  /* ---------- перелистывание ----------
-     Лист поворачивается вокруг корешка 780 мс, и всё это время под ним
-     лежат обе полосы разворота. Менять их надо ровно тогда, когда лист
-     их закрывает, — иначе на новом развороте ещё видна страница прошлого
-     (заметнее всего это было по иллюстрации: картинка держалась до конца
-     поворота и лишь потом исчезала).
-
-     Правило: полосу, которую лист закрывает В НАЧАЛЕ, меняем сразу — её
-     не видно; полосу, которую он накроет В КОНЦЕ, меняем после прохода
-     90°, с этого мгновения её закрывает изнанка листа. В одностраничном
-     режиме лист закрывает единственную полосу и в начале, и в конце,
-     поэтому хватает одной подмены — в начале, и из-под листа сразу
-     показывается уже новая страница, как в настоящей книге. */
-  var FLIP_MS = 780;      /* столько же стоит в .b-flip.is-go */
-  var FLIP_HALF = 470;    /* 90° лист проходит на ~310 мс, берём с запасом */
-  var flipHalf = 0, flipEnd = 0;
-
-  /* Оборвать поворот на полпути. Нужно, когда из оглавления открыли другую
-     главу: отложенные подмены полос считают номера по старому набору
-     страниц и, доехав, поставили бы на разворот куски прошлой главы. */
-  function stopFlip() {
-    clearTimeout(flipHalf); clearTimeout(flipEnd);
-    flipHalf = flipEnd = 0;
-    elFlip.classList.remove('is-go');
+  function selectBlock(block) {
+    var index = pages.findIndex(function (html) { return html.indexOf('data-book-block="' + block + '"') >= 0; });
+    spread = Math.max(0, Math.floor(Math.max(0,index) / (TWO() ? 2 : 1)));
+  }
+  function setReadingMode(mode) {
+    if (mode === readingMode) return;
+    var block = currentBlock(); stopFlip(); readingMode = mode;
+    try { localStorage.setItem(modeKey, mode); } catch (_) {}
+    syncModeUI();
+    if (cur < 0) return;
+    if (textMode()) renderFlow(block);
+    else { pages = paginate(chapterHTML); selectBlock(block); paint(); $('#reader').scrollIntoView({block:'start',behavior:'instant'}); }
+  }
+  function loadImage(src) {
+    if (!src) return Promise.resolve();
+    if (readyImages.has(src)) return readyImages.get(src);
+    var im = new Image(); im.decoding = 'async';
+    var promise = new Promise(function(resolve) {
+      var timer=setTimeout(resolve,12000);
+      var done=function(){clearTimeout(timer);resolve();};
+      im.onload = function() { (im.decode ? im.decode().catch(function(){}) : Promise.resolve()).then(done); };
+      im.onerror = done; im.src = src;
+    });
+    readyImages.set(src,promise);return promise;
+  }
+  function warm(html) {
+    var sources = [], re = /<img[^>]+src="([^"]+)"/g, m;
+    while ((m = re.exec(html || ''))) sources.push(loadImage(m[1]));
+    return Promise.all(sources);
+  }
+  function warmSpread(index) {
+    var step = TWO() ? 2 : 1, jobs = [];
+    for (var i = index * step; i < Math.min(pages.length,index * step+step); i++) { jobs.push(warm(pages[i])); jobs.push(loadImage(paperFor(cur,i))); }
+    return Promise.all(jobs);
+  }
+  function prefetchNearby() {
+    if (textMode()) return;
+    warmSpread(spread); if (spread > 0) warmSpread(spread - 1); warmSpread(spread + 1); warmSpread(spread + 2);
+  }
+  function hideLeaf() {
+    if (!elFlip) return;
     elFlip.style.display = 'none';
-    busy = false;
+    elFlip.getAnimations().forEach(function(a){a.cancel();});
+    elFlip.className = 'b-flip';
+    elFlip.querySelectorAll('.b-pg').forEach(function(el){el.textContent='';});
+  }
+  function stopFlip() {
+    turnEpoch++;busy=false;hideLeaf();
+    if(elBook)elBook.removeAttribute('aria-busy');
+  }
+  async function prepareLeaf(face, index) {
+    var pg=face.querySelector('.b-pg'), no=face.querySelector('.b-no');
+    if(!no){no=window.document.createElement('div');no.className='b-no';face.appendChild(no);}
+    fill(pg,no,index);
+    await Promise.all($$('img',pg).map(function(im){
+      if(!im.decode)return loadImage(im.src);
+      return new Promise(function(resolve){var timer=setTimeout(resolve,12000);im.decode().catch(function(){}).then(function(){clearTimeout(timer);resolve();});});
+    }));
+  }
+  async function turn(dir) {
+    if(busy||cur<0)return;
+    if(textMode()){if(CH[cur+dir])open(cur+dir,dir<0);return;}
+    var two=TWO(), step=two?2:1, total=Math.ceil(pages.length/step), next=spread+dir;
+    if(next<0||next>=total){if(CH[cur+dir])open(cur+dir,dir<0);return;}
+    busy=true;var ticket=++turnEpoch;elBook.setAttribute('aria-busy','true');chrome();
+    await Promise.all([warmSpread(spread),warmSpread(next)]);
+    if(ticket!==turnEpoch||textMode()||__root.hidden){if(ticket===turnEpoch){busy=false;elBook.removeAttribute('aria-busy');chrome();}return;}
+    if(calm()){spread=next;paint();busy=false;elBook.removeAttribute('aria-busy');chrome();return;}
+    var i=spread*step, j=next*step;
+    var frontIndex=dir>0?i+(two?1:0):i, backIndex=dir>0?j:j+(two?1:0);
+    var front=elFlip.querySelector('.b-face--front'), back=elFlip.querySelector('.b-face--back');
+    await Promise.all([prepareLeaf(front,frontIndex),prepareLeaf(back,backIndex)]);
+    if(ticket!==turnEpoch||textMode()||__root.hidden){if(ticket===turnEpoch){busy=false;elBook.removeAttribute('aria-busy');chrome();}return;}
+    elFlip.classList.toggle('is-rev',dir<0);
+    elFlip.style.display='block';
+    // The complete, decoded leaf covers this slot before its underlay changes.
+    // The opposite old page stays until the turning back face physically covers it.
+    if(two&&dir>0)fill(elR,elNoR,j+1);else fill(elL,elNoL,j);
+    var animation=elFlip.animate(
+      [{transform:'rotateY(0deg)'},{transform:'rotateY('+(dir>0?-180:180)+'deg)'}],
+      {duration:820,easing:'cubic-bezier(.38,.08,.22,1)',fill:'forwards'}
+    );
+    await animation.finished.catch(function(){});
+    if(ticket!==turnEpoch)return;
+    // Commit both destination pages with the opaque leaf still in place.
+    // Retiring the leaf in the same frame cannot expose old text or artwork.
+    spread=next;paint();hideLeaf();busy=false;elBook.removeAttribute('aria-busy');chrome();
   }
 
-  function turn(dir) {
-    if (busy || !pages.length) return;
-    var two = TWO(), step = two ? 2 : 1, total = Math.ceil(pages.length / step);
-    if (dir > 0 && spread >= total - 1) { if (cur < CH.length - 1) open(cur + 1); return; }
-    if (dir < 0 && spread <= 0) { if (cur > 0) open(cur - 1, true); return; }
-    if (calm()) { spread += dir; paint(); return; }
-
-    busy = true;
-    var i = spread * step;          /* первая полоса текущего разворота */
-    var j = i + dir * step;         /* первая полоса нового разворота   */
-    var front = dir > 0 ? (pages[i + (two ? 1 : 0)] || '') : (pages[i] || '');
-    var back = dir > 0 ? (pages[j] || '') : (pages[j + (two ? 1 : 0)] || '');
-    var fEl = elFlip.querySelector('.b-face--front .b-pg');
-    var bEl = elFlip.querySelector('.b-face--back .b-pg');
-    fEl.innerHTML = front; bEl.innerHTML = back;
-    drawCaps(fEl); drawCaps(bEl);
-    warm(pages[j]); warm(pages[j + 1]);
-
-    /* полоса, которую лист накрывает в начале */
-    if (two && dir > 0) fill(elR, elNoR, j + 1);
-    else fill(elL, elNoL, j);
-
-    elFlip.classList.toggle('is-rev', dir < 0);
-    elFlip.style.display = 'block';
-    void elFlip.getBoundingClientRect();
-    elFlip.classList.add('is-go');
-
-    /* полоса, которую лист накрывает в конце */
-    if (two) flipHalf = setTimeout(function () {
-      if (dir > 0) fill(elL, elNoL, j);
-      else fill(elR, elNoR, j + 1);
-    }, FLIP_HALF);
-
-    flipEnd = setTimeout(function () {
-      spread += dir;
-      stopFlip();
-      chrome();
-    }, FLIP_MS);
-  }
 
   /* ---------- открыть главу ---------- */
   function open(idx, last, quiet) {
@@ -7719,11 +7852,15 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
       + '<div class="b-open__t">' + esc(c.title) + '</div>'
       + '<div class="b-open__s">' + esc(c.date) + ' · ' + esc(c.place) + '</div></div>';
 
-    pages = paginate(head + dropify(c.body || ''));
-    var step = TWO() ? 2 : 1;
-    spread = last ? Math.max(0, Math.ceil(pages.length / step) - 1) : 0;
-    paint();
-    warm(pages[spread * step + step]); warm(pages[spread * step + step + 1]);
+    chapterHTML = prepareHTML(head + dropify(c.body || ''));
+    syncModeUI();
+    if (textMode()) { pages=[];spread=0;renderFlow(); }
+    else {
+      pages = paginate(chapterHTML);
+      var step = TWO() ? 2 : 1;
+      spread = last ? Math.max(0, Math.ceil(pages.length / step) - 1) : 0;
+      paint();
+    }
 
     /* В сборке одним файлом адрес — это маршрут: «#ch01» увёл бы с раздела
        при перезагрузке. Пишем полный путь, как делает архив. */
@@ -8253,12 +8390,19 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
     elFlip = $('#flip'); elBar = $('#bar'); elCount = $('#rCount');
     elTitle = $('#rTitle'); elNum = $('#rNum'); elMeta = $('#rMeta');
     elBook = $('#book'); elPrev = $('#prev'); elNext = $('#next');
+    flow = $('#flow');flowBody = $('#flowBody');
+    __root.classList.remove('is-night');window.document.body.classList.remove('is-night');
+    syncModeUI();
+    $('#flowPrev').addEventListener('click',function(){ if(cur>0) open(cur-1); });
+    $('#flowNext').addEventListener('click',function(){ if(cur<CH.length-1) open(cur+1); });
+    var scrollQueued=false;
+    window.addEventListener('scroll',function(){if(!textMode()||__root.hidden||scrollQueued)return;scrollQueued=true;window.requestAnimationFrame(function(){scrollQueued=false;chrome();});},{passive:true});
 
     elNext.addEventListener('click', function () { turn(1); });
     elPrev.addEventListener('click', function () { turn(-1); });
 
     document.addEventListener('keydown', function (e) {
-      if (cur < 0) return;
+      if (cur < 0 || __root.hidden || textMode()) return;
       var t = e.target;
       if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
       if (e.key === 'ArrowRight') { e.preventDefault(); turn(1); }
@@ -8279,36 +8423,26 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
       if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.4) turn(dx < 0 ? 1 : -1);
     }, { passive: true });
 
-    /* ночь / пергамент */
-    var pb = $('#paper');
-    pb.addEventListener('click', function () {
-      var night = document.body.classList.toggle('is-night');
-      pb.textContent = night ? 'Пергамент' : 'Ночь';
-      pb.setAttribute('aria-pressed', night ? 'true' : 'false');
-      if (pages.length) paint();
+    $$('#readingMode button').forEach(function(button){
+      button.addEventListener('click',function(){ setReadingMode(button.dataset.mode); });
+    });
+    var rt, lastW=window.innerWidth,lastH=window.innerHeight;
+    window.addEventListener('resize',function(){
+      if(window.innerWidth===lastW&&window.innerHeight===lastH)return;lastW=window.innerWidth;lastH=window.innerHeight;
+      var block=currentBlock();stopFlip();clearTimeout(rt);
+      rt=setTimeout(function(){
+        if(LIMB)LIMB.refit();if(cur<0||__root.hidden)return;syncModeUI();
+        if(!textMode()){pages=paginate(chapterHTML);selectBlock(block);paint();}
+      },180);
+    },{passive:true});
+    __root.addEventListener('route:show',function(){
+      var key=window.__sub, index=CH.findIndex(function(c){return c.key===key;});
+      if(index>=0&&index!==cur)open(index);
     });
 
-    /* пересчёт при изменении ширины */
-    var rt, lastW = window.innerWidth;
-    window.addEventListener('resize', function () {
-      if (window.innerWidth === lastW) return;
-      lastW = window.innerWidth;
-      clearTimeout(rt);
-      rt = setTimeout(function () {
-        if (LIMB) LIMB.refit();
-        if (cur < 0) return;
-        var frac = pages.length ? (spread * (TWO() ? 2 : 1)) / pages.length : 0;
-        var keep = cur;
-        open(keep, false, true);
-        var step = TWO() ? 2 : 1;
-        spread = Math.min(Math.ceil(pages.length / step) - 1,
-          Math.max(0, Math.round(frac * pages.length / step)));
-        paint();
-      }, 280);
-    }, { passive: true });
 
     /* глубокая ссылка */
-    var h = (location.hash || '').replace('#', '');
+    var h = window.__sub || (location.hash || '').replace(/^#\/?kniga\/?/, '');
     var idx = h ? CH.findIndex(function (c) { return c.key === h; }) : -1;
     if (idx >= 0) setTimeout(function () { open(idx); }, 120);
     else setTimeout(function () { open(0, false, true); }, 120);
@@ -8316,7 +8450,7 @@ W['kniga']=function(){var __root=window.document.getElementById('r-kniga');var _
 
   Promise.resolve({ok:true,json:function(){return Promise.resolve(window.__D["chapters"])}})
     .then(function (r) { if (!r.ok) throw new Error('chapters: ' + r.status); return r.json(); })
-    .then(boot)
+    .then(function(data){return (window.document.fonts ? window.document.fonts.ready : Promise.resolve()).then(function(){boot(data);});})
     .catch(function (err) {
       var host = $('#toc');
       if (host) host.innerHTML = '<p class="k-cap">Не удалось прочитать главы: ' + esc(err.message) + '</p>';
