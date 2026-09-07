@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "package_version": "1.0",
+  "project": "ЖРЕБИЙ",
+  "character_id": "tas",
+  "character_name_ru": "Тас",
+  "status": "approved",
+  "approval_basis_ru": "Владелец канона просмотрела серию и дала команду «посмотрела, упаковывай».",
+  "master_id": "tas-master",
+  "galleries": {
+    "model_sheet": [
+      "tas-view-front",
+      "tas-view-right",
+      "tas-view-left",
+      "tas-view-back",
+      "tas-detail-head",
+      "tas-detail-open-chest",
+      "tas-detail-hands-lockpicks",
+      "tas-detail-palms-cold",
+      "tas-detail-palms-heated",
+      "tas-pose-self-check",
+      "tas-pose-bone-dust",
+      "tas-pose-left-hand-lag"
+    ],
+    "story": [
+      "tas-scene-01-wall-lock",
+      "tas-scene-02-wall-collision",
+      "tas-scene-03-key-over-gold",
+      "tas-scene-04-self-repair",
+      "tas-scene-05-melting-plate"
+    ]
+  },
+  "identity_reference_order": [
+    "tas-master",
+    "relevant_approved_detail_or_view",
+    "optional_approved_scene"
+  ],
+  "coordinate_convention_ru": "Анатомические стороны персонажа; не зеркалить. Кинжал и грудные петли справа по телу Таса.",
+  "images": 18,
+  "renditions": 33,
+  "path_base": "project_root",
+  "formats": [
+    "webp",
+    "jpg"
+  ],
+  "assets": [
+    {
+      "id": "tas-master",
+      "category": "master",
+      "title_ru": "MASTER — основной образ",
+      "alt_ru": "Тас в полный рост: кованое тело из тёмного металла, узкая оптическая щель, раскрытые ладони со встроенными отмычками.",
+      "note_ru": "Первый референс идентичности для всех будущих генераций.",
+      "order": 1,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "f2081e4834fb9213692613bbf43e19498d3726ab1593fc194a6c90c0f0e4fbde",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-master.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 261006,
+          "sha256": "80325532f8eea5ca49c8a8410f71df74f4891678044e89f674d2fc53abf8f254"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-master.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 505575,
+          "sha256": "742c02c512e2e0bb0f456b5f0ff2612dde93101b3961200d357f3503f5ca4414"
+        }
+      }
+    },
+    {
+      "id": "tas-view-front",
+      "category": "views",
+      "title_ru": "Анфас",
+      "alt_ru": "Тас спереди в полный рост, с открытыми ладонями и компактным кинжалом на правом бедре.",
+      "note_ru": "",
+      "order": 2,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "024ba8d8955ae65655c94fe87ff4773f5957c51aaa2528958968fd30c1bb1d7c",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-view-front.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 257338,
+          "sha256": "082258ac0946fc7ac1963bd70d3407ea1c2be7950f97c93191e3fcda80011ec7"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-view-front.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 491131,
+          "sha256": "25ffa7caa8f8d9f39288246c8208a48fc7b6ce343ea5e9f52056affe22f18622"
+        }
+      }
+    },
+    {
+      "id": "tas-view-right",
+      "category": "views",
+      "title_ru": "Правый профиль",
+      "alt_ru": "Тас с правой стороны, лицом влево; видны ножны кинжала и петли грудной панели.",
+      "note_ru": "Правая анатомическая сторона обращена к зрителю; лицо направлено влево по кадру.",
+      "order": 3,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "6e28a0c0b6d54b889842a3cb2e8624a82fc5b57e12a3b141ab366a594d056cf8",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-view-right.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 199188,
+          "sha256": "1288703f37500bf43470a5e313f1c2f439e39fd56b3a3f7a7925178844238fb0"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-view-right.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 435542,
+          "sha256": "4bdd9e965ab738bb087bfeba467f055b4bc82819d955e2d73266c0cd9ed91090"
+        }
+      }
+    },
+    {
+      "id": "tas-view-left",
+      "category": "views",
+      "title_ru": "Левый профиль — финал",
+      "alt_ru": "Тас с левой стороны, лицом вправо; на ближнем бедре нет кинжала, на ближней стороне груди нет петель.",
+      "note_ru": "Исправленный финальный профиль. Левая анатомическая сторона обращена к зрителю; лицо направлено вправо по кадру.",
+      "order": 4,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "a7641267f9fb10a875485c8eb1523149c9f0e87f05a95550b91c4e9b6efcb24b",
+      "renditions": {
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-view-left.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 397927,
+          "sha256": "24fde09a69e6a91ed469fbbf10bc61d1e248efe0082c1ae2bd27dd123d5ea22a"
+        }
+      }
+    },
+    {
+      "id": "tas-view-back",
+      "category": "views",
+      "title_ru": "Со спины",
+      "alt_ru": "Тас со спины в полный рост: тёмные металлические пластины и кинжал справа для зрителя.",
+      "note_ru": "",
+      "order": 5,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "27934e1949c2a38455a36899de3b696ce182676c2bffaadf4c7c284f4869dde8",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-view-back.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 201888,
+          "sha256": "5cd682468bc854f05da544aff356c1a7316643bd11d5f20d0e88a1472e44aba3"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-view-back.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 439120,
+          "sha256": "d54c3dc9cc0496648a18227a4c78333969181e94105557934150ac3784359093"
+        }
+      }
+    },
+    {
+      "id": "tas-detail-head",
+      "category": "details",
+      "title_ru": "Голова",
+      "alt_ru": "Крупный план угловатой кованой головы Таса с узкой чёрной оптической щелью и слабой точкой жара.",
+      "note_ru": "",
+      "order": 6,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "88783e35544b034efc2d405af01eb0dcb0227507d5e154c8c60e7f5a38f15d51",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-detail-head.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 297986,
+          "sha256": "e76b9f1b0f0c04dbbda47d9ebe6a8cf56463a13db641ac8515ef531217dab948"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-detail-head.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 552035,
+          "sha256": "d03ea3bff510e2e2dcdc1d2cfdcff352c5e43b6eaadd99680328cb236c04c056"
+        }
+      }
+    },
+    {
+      "id": "tas-detail-open-chest",
+      "category": "details",
+      "title_ru": "Раскрытая грудная механика",
+      "alt_ru": "Открытая грудная створка Таса и плотные металлические тяги, оси и зубчатые детали внутри.",
+      "note_ru": "",
+      "order": 7,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "94fc875b2fb5340c6b46449d02561162f68fda679341156d23d5ed1948f6c8f8",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-detail-open-chest.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 314996,
+          "sha256": "f29c82819261fb6f422cd2fac09eb52822a5a70fa7969b6fb2ec667e664bace0"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-detail-open-chest.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 594715,
+          "sha256": "66827433969b3f1eab7d57c5492b964dfff8b02ff46d19d2bee4a8452c8bec86"
+        }
+      }
+    },
+    {
+      "id": "tas-detail-hands-lockpicks",
+      "category": "details",
+      "title_ru": "Кисти со встроенными отмычками",
+      "alt_ru": "Тыльные стороны двух железных кистей Таса: короткие отмычки выходят из пазов у оснований пальцев.",
+      "note_ru": "",
+      "order": 8,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "2f44e2ba0c77e903f061484e48e4cdf178841fc5c8608f736e8fa01adb8143b8",
+      "renditions": {
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-detail-hands-lockpicks.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 534061,
+          "sha256": "23a014f56f02e1dab768a61b29ca440e8652b298f1a8c135b3bca39758ff98b8"
+        }
+      }
+    },
+    {
+      "id": "tas-detail-palms-cold",
+      "category": "details",
+      "title_ru": "Холодные ладони",
+      "alt_ru": "Две раскрытые металлические ладони Таса в холодном состоянии; швы остаются тёмными.",
+      "note_ru": "",
+      "order": 9,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "c5cf2efe8811f2f4bd0e325d47c50c780f3f5f76ced419656079b33fbbebb970",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-detail-palms-cold.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 264536,
+          "sha256": "b2d666ff163b25d443415e29049e466f5212f0c34de763b70e34ab1c7a39386f"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-detail-palms-cold.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 528495,
+          "sha256": "4affad4178d42eb1bff6527ba2dc39955884bc29419ba2b3def30c2d4d4890ac"
+        }
+      }
+    },
+    {
+      "id": "tas-detail-palms-heated",
+      "category": "details",
+      "title_ru": "Разогретые ладони",
+      "alt_ru": "В швах раскрытых ладоней Таса светится оранжевый жар, изнутри поднимается лёгкая гарь.",
+      "note_ru": "Активное тепловое состояние, а не постоянная яркость тела.",
+      "order": 10,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "d924dc917c6ae4c28308fa15ed7994857d8131399691099e95873093bac950e4",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-detail-palms-heated.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 239704,
+          "sha256": "7eb92e8d823bf04ef9e221cffc4e9b21472a22c1608ec888fcd6cc3a748b9ec5"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-detail-palms-heated.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 501880,
+          "sha256": "91856bdf65c8841a5dfe6ad0ff468f9615dfc074fe04485aa845fe8444860c94"
+        }
+      }
+    },
+    {
+      "id": "tas-pose-self-check",
+      "category": "poses",
+      "title_ru": "Проверка механизмов",
+      "alt_ru": "Тас стоит, придерживая грудную створку одной рукой и проверяя внутренний механизм другой.",
+      "note_ru": "",
+      "order": 11,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "36bc6724642d34729c9065c7daf114332395a64b96ebbac9ec26e6c50e0fb68d",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-pose-self-check.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 284480,
+          "sha256": "4ae7525db5596fdb1ae4bee45a257685b7fef49c765e9d8c530bc49f3d6f5dbd"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-pose-self-check.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 540360,
+          "sha256": "6a0140ef350170e9604bc5efb810e8184d171ebb777ab9bb331668be04c53151"
+        }
+      }
+    },
+    {
+      "id": "tas-pose-bone-dust",
+      "category": "poses",
+      "title_ru": "Костяная пыль на плече",
+      "alt_ru": "Тас проводит правой ладонью по левому наплечнику, оставляя чистые полосы в костяной пыли.",
+      "note_ru": "Пыль и полосы относятся к отдельной сцене.",
+      "order": 12,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "e9c3245bff194b47b5e36b855a4d5c9872f488fed98c9befe55c5a43aedbeb96",
+      "renditions": {
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-pose-bone-dust.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 531410,
+          "sha256": "676b548554125f458c4f0600c3f11a073b19998b42c4d038032ef722674f3858"
+        }
+      }
+    },
+    {
+      "id": "tas-pose-left-hand-lag",
+      "category": "poses",
+      "title_ru": "Задержка левой руки",
+      "alt_ru": "Тас смотрит на запаздывающую левую кисть после действия яда; правая рука сжата увереннее.",
+      "note_ru": "Последствие яда через швы и смазку, не постоянное устройство руки.",
+      "order": 13,
+      "width": 1086,
+      "height": 1448,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "6ee2aad4d78a6fb6233dd456876a0cda8b29debd343db37dc77ff939cce364f3",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-pose-left-hand-lag.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 218858,
+          "sha256": "b5476669070fc86c631f3506071c147528d9f0960f5d781441d90c36081428e5"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-pose-left-hand-lag.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 468693,
+          "sha256": "0ef8f5945dda10e90248940fe37b80b30bbeed3cc1c9c81007f6255780e2ead7"
+        }
+      }
+    },
+    {
+      "id": "tas-scene-01-wall-lock",
+      "category": "scenes",
+      "title_ru": "Замок в глухой стене",
+      "alt_ru": "Тас опустился у глухой каменной стены и пробует встроенной отмычкой обычный шов кладки.",
+      "note_ru": "В кадре нет найденного замка, двери или другого персонажа.",
+      "order": 14,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "e32451a22f3d106f5be816a34250ffdab251dcf3ea6e75b80663dc5eb6afddb8",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-scene-01-wall-lock.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 397398,
+          "sha256": "66ddf9eb086fb0d402d1b48beca77ab92310fd938850a008ea20ba763e61c4a2"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-scene-01-wall-lock.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 640928,
+          "sha256": "3311cec28d576575e4e9f9bb84b71233cf1b9891152276bd97bfdcb853bec50b"
+        }
+      }
+    },
+    {
+      "id": "tas-scene-02-wall-collision",
+      "category": "scenes",
+      "title_ru": "После столкновения со стеной",
+      "alt_ru": "Тас сидит у целой каменной стены после столкновения, осматривая свежую вмятину среди осевшей пыли.",
+      "note_ru": "",
+      "order": 15,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "61c784eb344afe958f840c625b2ae4ea01c0166c0f43c421f1249215933e477f",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-scene-02-wall-collision.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 414032,
+          "sha256": "b72dd64b441f657d103b144a19ba08c51370919cec831c62336d47d3e44e636d"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-scene-02-wall-collision.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 657593,
+          "sha256": "1dc90be50b98a8531c1bc302fa39475ad616681d5d216d0f29fe2fca03c91616"
+        }
+      }
+    },
+    {
+      "id": "tas-scene-03-key-over-gold",
+      "category": "scenes",
+      "title_ru": "Ключ вместо золота",
+      "alt_ru": "Тас рассматривает выбранный маленький железный ключ; золотые монеты остаются на каменном уступе.",
+      "note_ru": "",
+      "order": 16,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "3fa52d39fa935e0cf3683ea4ca5b9d492dc6edd8f5f40e3e71f6ab154c04383f",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-scene-03-key-over-gold.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 240162,
+          "sha256": "c233aee84d86d9a5db80771142e4f0155432c8fa42671d91473830215e46a790"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-scene-03-key-over-gold.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 481750,
+          "sha256": "8766543603f0d43d8846f82615bbd515cb8cd7081e5fdf7fd9a4b917879c7b0c"
+        }
+      }
+    },
+    {
+      "id": "tas-scene-04-self-repair",
+      "category": "scenes",
+      "title_ru": "Самостоятельная запайка",
+      "alt_ru": "Сидя на каменном блоке, Тас жаром правой ладони запаивает повреждение собственного левого предплечья.",
+      "note_ru": "",
+      "order": 17,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "9d459951d547fed625bc4905c84189fa17f5cb91213eae09ec3b051020d27c87",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-scene-04-self-repair.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 344372,
+          "sha256": "95bd051a05fbaefe9b4b74a9a367fe37f176a115bb7fd5f9174b0f0459c7953e"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-scene-04-self-repair.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 601861,
+          "sha256": "6b84e1f2d728fb72b87636a38e400f5471a922b6c81e09164c6764b2b64966ca"
+        }
+      }
+    },
+    {
+      "id": "tas-scene-05-melting-plate",
+      "category": "scenes",
+      "title_ru": "Расплавление толстой пластины",
+      "alt_ru": "Тас держит ладони по сторонам толстой металлической пластины; жар размягчает металл, вниз стекают расплавленные капли.",
+      "note_ru": "",
+      "order": 18,
+      "width": 1448,
+      "height": 1086,
+      "character_id": "tas",
+      "approval_status": "approved",
+      "source_sha256": "ea0310d299fa45d82f2fb65f27980f2bd714d7c56696fa1a373ebbb65d7aa77f",
+      "renditions": {
+        "webp": {
+          "path": "assets/img/characters/tas/tas-scene-05-melting-plate.webp",
+          "mime_type": "image/webp",
+          "size_bytes": 381126,
+          "sha256": "1b2338ac886fd068cb96b2159142e42e0c34dffae27e8fd0cd8f775f5cdab033"
+        },
+        "jpg": {
+          "path": "assets/img/characters/tas/tas-scene-05-melting-plate.jpg",
+          "mime_type": "image/jpeg",
+          "size_bytes": 652202,
+          "sha256": "cc864d530344916e9829248933f6c951e74368a4f347fcd5d66523f1d98bd302"
+        }
+      }
+    }
+  ],
+  "export_settings": {
+    "resize": false,
+    "crop": false,
+    "mirror": false,
+    "color_mode": "RGB",
+    "webp_quality": 90,
+    "jpeg_quality": 93,
+    "jpeg_subsampling": "4:4:4"
+  },
+  "integration_note_ru": "Самостоятельный манифест. Не заменяет cards.json; сопоставьте пути с существующей схемой проекта."
+}
