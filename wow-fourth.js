@@ -7,7 +7,7 @@ const cards=JSON.parse($('#jd-cards').textContent);
 const btn=(text,fn)=>{const b=el('button','w4-button',text);b.type='button';b.onclick=fn;return b};
 const profiles={
  sasha:['img/portraits/sandria-3.jpg',17,13,'100,151,255','Свет в навершии посоха'],
- samik:['img/portraits/lucius-2.jpg',12,14,'255,169,72','Фонарь в трактире'],
+ samik:['img/characters/lucius-20260909/scene-01.webp',26,43,'255,169,72','Фонарь в трактире'],
  vitya:['img/characters/dwarf/dwarf-scene-03-music.webp',43,44,'216,175,108','Тёплый отблеск на инструменте'],
  dee:['img/portraits/fronki-2.jpg',80,51,'255,166,74','Лампа у стола'],
  georg:['img/portraits/georgos-3.jpg',13,75,'183,207,235','Разряд вдоль клинка'],
