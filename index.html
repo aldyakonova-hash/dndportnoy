@@ -21,7 +21,7 @@
 
 
 
-</head>
+<link rel="stylesheet" href="wow-fourth.css?v=7"><link rel="stylesheet" href="motion-rework.css?v=7.1"><link rel="stylesheet" href="original-character-cards.css?v=9"></head>
 <body style="margin:0">
 <style>
 /* =============================================================================
@@ -9422,6 +9422,7 @@ W['omut']=function(){var __root=window.document.getElementById('r-omut');var __I
       return;
     }
     sel = n;
+    window.dispatchEvent(new CustomEvent('wow:memory',{detail:{x:cxp+ox+n.nx*wKx*lens,y:cyp+oy+n.ny*wKy*lens,neighbors:(ADJ[n.id]||[]).map(function(id){return NBY[id]}).filter(Boolean).map(function(v){return {x:cxp+ox+v.nx*wKx*lens,y:cyp+oy+v.ny*wKy*lens}})}}));
     var col = TAGC[n.tag] || TAGC['нейтральный'];
     var rel = (ADJ[n.id] || []).map(function (id) { return NBY[id]; }).filter(Boolean);
     var recs = KN.filter(function (k) { return (k.entities || []).indexOf(n.id) >= 0; });
@@ -11468,6 +11469,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
     sheet.classList.toggle('l-secondary-dossier', c.kind !== 'pc');
     threadArches.disconnect();
     sheet.innerHTML = dossierHTML(c, i);
+    window.dispatchEvent(new CustomEvent("w4:dossier",{detail:{id:c.id,index:i,name:c.name}}));
     sheet.querySelectorAll('.l-fig--arch button').forEach(function(el){threadArches.observe(el);});
     watchImages(sheet);
     wantPortrait(c);
@@ -12568,7 +12570,7 @@ W['karta']=function(){var __root=window.document.getElementById('r-karta');var _
       /* цель запоминаем СЕЙЧАС: setPointerCapture ниже переадресует все
          следующие события окну, и в pointerup target будет уже не метка */
       drag = { x: e.clientX, y: e.clientY, tx: tx, ty: ty, moved: false, id: e.pointerId,
-               hit: e.target.closest ? e.target.closest('.m-pin,.poi') : null };
+               hit: e.target.closest ? e.target.closest('.m-pin,.poi,.w4-room') : null };
       view.setPointerCapture(e.pointerId);
       view.classList.add('is-drag');
     });
@@ -12583,7 +12585,7 @@ W['karta']=function(){var __root=window.document.getElementById('r-karta');var _
         return;
       }
       if (e.pointerType !== 'mouse') return;
-      var g = e.target.closest ? e.target.closest('.m-pin,.poi') : null;
+      var g = e.target.closest ? e.target.closest('.m-pin,.poi,.w4-room') : null;
       var p = g && BYID[g.getAttribute('data-id')];
       if (p && !(flt && String(p.ch) !== String(flt))) {
         hot(p.id);
@@ -12603,8 +12605,9 @@ W['karta']=function(){var __root=window.document.getElementById('r-karta');var _
       var g = drag0hit;
       if (!g) {
         var under = document.elementFromPoint(e.clientX, e.clientY);
-        g = under && under.closest ? under.closest('.m-pin,.poi') : null;
+        g = under && under.closest ? under.closest('.m-pin,.poi,.w4-room') : null;
       }
+      if (g && g.classList.contains('w4-room')) {g.dispatchEvent(new CustomEvent('w4:room'));return;}
       if (g) {
         var id = g.getAttribute('data-id'), p = BYID[id];
         if (p && !(flt && String(p.ch) !== String(flt))) {
@@ -12941,6 +12944,7 @@ W['karta']=function(){var __root=window.document.getElementById('r-karta');var _
 
   window.__karta = {
     open: function (id) { openPoi(id, true); focusPoi(BYID[id]); },
+    openUnder: function(id,bbox){openPoi(id,true);focusPoi({bbox:bbox});},
     zoom: function () { return k; },
     setZoom: function (v) { setK(v); },
     fit: function () { fit(); },
@@ -14311,5 +14315,5 @@ W['masterskaya']=function(){var __root=window.document.getElementById('r-masters
 @media(max-width:800px){#r-lica .l-thread-grid,#r-lica .l-secondary-dossier .l-thread-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
 @media(max-width:500px){#r-lica .l-thread-grid,#r-lica .l-secondary-dossier .l-thread-grid{grid-template-columns:minmax(0,1fr)}#r-lica .l-thread-portraits{grid-template-columns:minmax(0,1fr)}}
 </style>
-</body>
+<script src="motion-rework.js?v=9"></script><script src="wow-fourth.js?v=9"></script></body>
 </html>

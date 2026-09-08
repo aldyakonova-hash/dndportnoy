@@ -1,0 +1,93 @@
+/* Independent cutouts replace the earlier polygon patches. */
+#r-index .p-act__cam.motion-separated{animation:none!important;transform:none!important}
+#r-index .motion-layer{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none;will-change:transform;z-index:2}
+#r-index .motion-separated>img:first-child{object-fit:fill}
+.motion-slow{display:flex;align-items:center;gap:10px;padding:14px 6px 4px;border-top:1px solid #b89d6428;font-size:10px;letter-spacing:.02em;cursor:pointer}
+.motion-slow input{accent-color:#b99a64;width:15px;height:15px}
+
+/* Foil is a surface reflection; the image and typography remain stationary. */
+.motion-foil,.motion-glare,.motion-foil-edge{position:absolute;inset:0;pointer-events:none;z-index:8;backface-visibility:hidden;border-radius:inherit;overflow:hidden;opacity:0;transition:opacity 180ms ease-out}
+.motion-foil{background:repeating-linear-gradient(var(--foil-angle,115deg),#ab99df 0%,#d4b984 13%,#a7c5c8 26%,#d1a6b4 38%,#b3a0db 50%);background-size:230% 230%;background-position:var(--foil-x,50%) var(--foil-y,50%);mix-blend-mode:color-dodge;mask-image:repeating-linear-gradient(35deg,#000 0 .6px,#0005 .6px 2.7px),radial-gradient(ellipse at var(--foil-x,50%) var(--foil-y,50%),#000,transparent 85%);mask-composite:intersect}
+.motion-glare{inset:-40%;background:linear-gradient(105deg,transparent 32%,#fff3d807 39%,#fff7de80 47%,#ffffffac 50%,#d6e8fa52 53%,transparent 65%);mix-blend-mode:screen;transform:translate3d(-65%,0,0) rotate(-22deg);transition:opacity 180ms ease-out,transform 240ms cubic-bezier(.23,1,.32,1)}
+.motion-foil-edge{inset:1px;background:conic-gradient(from var(--foil-angle,115deg),#9a78b400,#ffe5a8,#c6e3eb,#bd82a9,#a287cf,#ffe5a8,#9a78b400);padding:1px;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;opacity:.18}
+.motion-lit .motion-foil{opacity:.5}.motion-lit .motion-glare{opacity:.8}.motion-lit .motion-foil-edge{opacity:.95}
+#r-lica .l-open[data-foil5]{transition:rotate 240ms cubic-bezier(.23,1,.32,1);transform-style:preserve-3d}
+#r-lica .l-fan__c>.motion-foil,#r-lica .l-fan__c>.motion-glare{clip-path:inset(1px)}
+#r-lica .l-fan__c[data-foil5]{isolation:isolate;overflow:hidden}
+.w4-card-front,.w4-card-back{isolation:isolate}
+.motion-light-test{align-self:center;max-width:140px}
+
+/* The letter consists of three connected paper panels. The upper and lower
+   thirds hinge onto the centre; front and reverse are separate surfaces. */
+.fold-dialog{width:min(860px,96vw);max-width:96vw;max-height:96dvh;padding:20px 28px;border:1px solid #b99d6255;color:#e7d4b5;background:radial-gradient(ellipse at 50% 45%,#302831,#171522 80%);box-shadow:0 25px 150px #000a;overflow:auto}
+.fold-dialog::backdrop{background:#080810de;backdrop-filter:blur(8px)}
+.fold-dialog header,.fold-dialog footer{display:flex;align-items:center;justify-content:space-between;gap:15px;font:10px var(--kap,sans-serif);letter-spacing:.12em;position:relative;z-index:10}
+.fold-stage{position:relative;width:min(420px,calc(65dvh * .66667),82%);aspect-ratio:2/3;margin:20px auto;perspective:1500px;perspective-origin:50% 48%;isolation:isolate}
+.fold-page{position:absolute;inset:0;transform-style:preserve-3d}
+.fold-center,.fold-face{background-image:url('assets/fold-paper.png');background-size:100% 300%;background-repeat:no-repeat}
+.fold-center{position:absolute;inset:33.3333% 0;height:33.3334%;background-position:50% 50%;filter:drop-shadow(0 14px 14px #0004)}
+.fold-part{position:absolute;left:0;right:0;height:33.3334%;transform-style:preserve-3d;will-change:transform}
+.fold-top{top:0;transform-origin:50% 100%;transform:rotateX(-180deg);z-index:3}
+.fold-bottom{top:66.6666%;transform-origin:50% 0%;transform:rotateX(180deg);z-index:2}
+.fold-face{position:absolute;inset:0;backface-visibility:hidden}
+.fold-top .front{background-position:50% 0%}.fold-bottom .front{background-position:50% 100%}
+.fold-face.back{transform:rotateX(180deg);background-position:50% 50%;box-shadow:0 3px 5px #482a1738;clip-path:polygon(.6% .8%,100% 0,99.4% 99.5%,0 100%)}
+.fold-top .back{background-position:50% 0%}.fold-bottom .back{background-position:50% 100%}
+.fold-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#38231688,transparent 90%);opacity:.5;backface-visibility:visible}
+.fold-copy{position:absolute;inset:15% 12% 12%;display:flex;flex-direction:column;justify-content:center;color:#38281e;opacity:0;z-index:5;pointer-events:auto}
+.fold-copy small{font:10px var(--kap,sans-serif);letter-spacing:.22em}.fold-copy blockquote{font:italic clamp(17px,2.3vh,22px)/1.45 var(--serif,serif);margin:18px 0}.fold-copy a{color:#765031;font:10px var(--kap,sans-serif);text-underline-offset:4px}
+.fold-seal{position:absolute;left:39%;top:42.67%;width:22%;aspect-ratio:1;z-index:7;perspective:1000px;pointer-events:none}
+.wax-piece{position:absolute;inset:0;background:url('assets/wax-cut.png') center/contain no-repeat;filter:drop-shadow(1px 3px 2px #38171288);will-change:transform;transform-origin:50% 50%}
+.wax-piece.left{clip-path:polygon(0 0,51% 0,48% 15%,54% 25%,46% 38%,51% 50%,45% 61%,52% 74%,46% 86%,50% 100%,0 100%)}
+.wax-piece.right{clip-path:polygon(51% 0,100% 0,100% 100%,50% 100%,46% 86%,52% 74%,45% 61%,51% 50%,46% 38%,54% 25%,48% 15%)}
+.fold-seal-target{position:absolute;inset:0;border:0;border-radius:50%;background:transparent;pointer-events:auto;cursor:pointer;z-index:3}
+.fold-seal-target:focus-visible{outline:2px solid #e3c882;outline-offset:3px}
+.fold-seal-target:hover{box-shadow:0 0 25px #ecad4828}
+.fold-dialog .w4-button:active{transform:scale(.97)}
+@media(max-width:600px){.fold-dialog{padding:15px}.fold-stage{width:min(340px,90%,calc(65dvh * .66667));margin:25px auto}.fold-copy{inset:8% 10%}.fold-copy blockquote{font-size:17px;line-height:1.38}.fold-copy small{font-size:9px}.fold-copy a{font-size:9px}.fold-dialog footer{letter-spacing:.02em}.motion-light-test{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.motion-layer{transform:none!important;will-change:auto!important}.motion-glare{transition:none}.motion-foil,.motion-glare{display:none}}
+.is-calm .motion-layer{transform:none!important;will-change:auto!important}.is-calm .motion-foil,.is-calm .motion-glare{display:none}
+.fold-center,.fold-face,.fold-face.back{clip-path:inset(0 2.7%)}
+.fold-top .front,.fold-top .back{clip-path:inset(5.4% 2.7% 0)}
+.fold-bottom .front,.fold-bottom .back{clip-path:inset(0 2.7% 5.4%)}
+
+.motion-passage *{animation-play-state:paused!important;transition:none!important}.motion-passage{background:#141426;will-change:transform}
+
+#r-index .motion-patch{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}#r-index .motion-layer{overflow:visible}
+
+#r-index .p-act__cam.motion-separated{transform:translate3d(var(--camera-x,0px),0,0)!important}.motion-tour{margin:10px 0;text-align:left}
+
+.motion-card-unit{display:flex;flex-direction:column;gap:10px;min-width:0}.motion-card-unit .motion-light-test,.motion-card-unit .w4-flip{width:100%;max-width:none;margin:0}
+
+#r-index .motion-sprite{position:absolute;z-index:2;pointer-events:none;overflow:hidden;will-change:transform;transform-origin:50% 65%;filter:saturate(.8) brightness(.86)}
+#r-index .motion-detail{z-index:4;filter:none}
+@media(prefers-reduced-motion:reduce){#r-index .motion-sprite{transform:none!important;will-change:auto}}
+.is-calm #r-index .motion-sprite{transform:none!important;will-change:auto}
+/* Keep complete foreground silhouettes inside the narrow-screen window.
+   The original panoramic backdrop remains wide; only sprite placement changes. */
+@media(max-width:720px){
+ #r-index .motion-sprite[data-subject="figure-1-0"]{left:26%!important;top:75%!important;width:18%!important;height:24%!important}
+ #r-index .motion-sprite[data-subject="figure-1-2"]{left:56%!important;top:73.5%!important;width:18%!important;height:26%!important}
+ #r-index .motion-sprite[data-subject="figure-1-1"]{left:45%!important;top:84%!important;width:10%!important;height:13%!important}
+ #r-index .motion-sprite[data-subject="медведица"]{top:48%!important;left:26%!important;width:25%!important;height:16.25%!important}
+ #r-index .motion-sprite[data-subject="Люциус"]{top:34%!important;left:41%!important;width:34%!important;height:22.1%!important}
+}
+
+/* Original lower scene is a continuous image, never a cropped torso sprite. */
+#r-index #cam1 .motion-original-foot{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:1;pointer-events:none;mask-image:linear-gradient(to bottom,transparent 73%,#000 81%)}
+#r-index .p-act--1 .p-fog{mask-image:linear-gradient(to bottom,transparent,#000 35%,#000 65%,transparent)}
+/* The first Fronki study: layered gilt edge, inner arch, soft coloured foil. */
+#r-lica .l-open.motion-rich-card{border:2px solid #b6975d;border-radius:9px;background:#19152d;box-shadow:3px 4px 0 #7b6244,6px 7px 0 #211829,0 24px 45px #0008;isolation:isolate}
+#r-lica .l-open.motion-rich-card .w4-card-front,#r-lica .l-open.motion-rich-card .w4-card-back{border-radius:7px}
+.motion-rich-card .motion-gilt-frame{position:absolute;inset:11px;border:1px solid #ddbd7999;border-radius:100px 100px 3px 3px;box-shadow:inset 0 0 0 5px #d9bd7110;z-index:9;pointer-events:none}
+.motion-rich-card .motion-gilt-frame:before,.motion-rich-card .motion-gilt-frame:after{content:'✦';position:absolute;top:43%;font:21px Georgia,serif;color:#dcc188;text-shadow:0 1px 3px #171125}
+.motion-rich-card .motion-gilt-frame:before{left:-9px}.motion-rich-card .motion-gilt-frame:after{right:-9px}
+#r-lica .l-open.motion-rich-card .l-open__body{text-align:center;padding:24px 22px 28px}
+#r-lica .l-open.motion-rich-card .l-open__name{color:#f4dfae;font-size:30px}
+#r-lica .l-open.motion-rich-card .w4-card-back{background:radial-gradient(circle at 50% 40%,#79547855,transparent 70%),repeating-conic-gradient(from 0deg,#b99a5715 0deg 1deg,transparent 1deg 15deg),#17132e;outline:none;border:0;padding:38px 28px}
+#r-lica .l-open.motion-rich-card .w4-monogram{border:1px solid #d4b97b;border-radius:50%;box-shadow:0 0 0 6px #d4b97b0d,0 0 0 7px #d4b97b33;color:#ddc78f}
+.motion-rich-card .motion-foil{opacity:.12}.motion-rich-card.motion-lit .motion-foil{opacity:.42}
+.motion-rich-card .motion-glare{background:linear-gradient(110deg,transparent 24%,#b7a0d415 35%,#fff1a35a 46%,#cfacf538 53%,transparent 68%)}
+.motion-rich-card.motion-lit .motion-glare{opacity:.65}
+#r-lica .l-fan__c.motion-rich-card .motion-gilt-frame{inset:8px;border-color:#ddbd7960}
+#r-lica .l-fan__c.motion-rich-card .motion-gilt-frame:before,#r-lica .l-fan__c.motion-rich-card .motion-gilt-frame:after{font-size:14px}
