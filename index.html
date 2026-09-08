@@ -19,6 +19,8 @@
 </style>
 
 
+
+
 </head>
 <body style="margin:0">
 <style>
@@ -11244,6 +11246,10 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
     var p = portraitURL(c);
     var rec = heroRec(c), credit = rec && rec.credit ? rec.credit : '';
     var h = '';
+    var fullIndex = canon.findIndex(function(x,k){return k>1 && x.role==='full';});
+    function canonFig(x,k,kind){return frameHTML(x,k,k,kind,all.length,'');}
+    var poses=canon.map(function(x,k){return {x:x,k:k};}).filter(function(v){return v.k>1 && v.k!==fullIndex;});
+
 
     /* Шапка. У героя с каноническими листами лицо показывает полоса под
        именем — арка с портретом была бы тем же лицом в третий раз. У
@@ -11260,6 +11266,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
         + '<i class="k-corner k-corner--bl"></i><i class="k-corner k-corner--br"></i>'
         + '</div>';
     }
+    if(canon.length)h+='<div class="l-thread-portraits">'+canon.slice(0,2).map(function(x,k){return canonFig(x,k,'arch');}).join('')+'</div>';
     h += '<div><p class="l-dos__tag" style="--tc:' + col + '">' + esc(c.tag || '')
       + (c.player && c.player !== '—' ? ' · играет ' + esc(c.player) : '')
       + (c.first ? ' · впервые в главе ' + esc(c.first) : '') + '</p>'
@@ -11267,11 +11274,12 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
       + '<p class="l-dos__line">' + esc(c.line || '') + '</p>'
       + (c.lede ? '<p class="l-dos__lede">' + esc(c.lede) + '</p>' : '')
       + '</div></div>';
-    if (canon.length) h += canonHTML(canon, all.length, credit, c);
+
 
     h+='<p class="l-canon__credit"><a class="k-btn k-btn--ghost" href="#/lica/'+encodeURIComponent(c.id)+'/canon">Посмотреть канон</a></p>';
     h += '</section>';
 
+    if(poses.length)h+='<div class="k-wrap l-thread-poses">'+sec('Жесты и характер','hand')+'<div class="l-thread-grid">'+poses.map(function(v){return canonFig(v.x,v.k,'pose');}).join('')+'</div></section></div>';
     h += '<div class="k-wrap l-dos__body"><div>';
 
     /* Сюжетные кадры вплетены в чтение, и места у них закреплены — одни и
@@ -11288,25 +11296,9 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
                 живут в лайтбоксе — он листает всю подборку, канон и сюжет.
        В лайтбоксе кадр ищется по номеру во всей подборке, поэтому кнопке
        передаётся k + nCanon. */
-    var who = (c.who || []).slice(), nWho = who.length;
-    var fig = function (k, kind) {
-      return g[k] ? frameHTML(g[k], k, k + nCanon, kind, all.length, (!nCanon && k === 3) ? credit : '') : '';
-    };
-    var leftInText = nWho >= 3;
-    /* очередь на свободные широкие места: после «Его слов» и после «Что было» */
-    var spare = g.slice(4).map(function (x, k) { return 4 + k; });
-    var spareFig = function () { var k = spare.shift(); return k === undefined ? '' : fig(k, 'wide'); };
-
-    h += sec('Кто это', 'eye') + '<div class="l-who">';
-    if (!nWho) h += fig(1, 'r');
-    h += who.map(function (p2, k) {
-      var f = '';
-      if (k === Math.min(1, nWho - 1)) f += fig(1, 'r');
-      if (leftInText && k === nWho - 1) f += fig(2, 'l');
-      return f + '<p>' + esc(p2) + '</p>';
-    }).join('');
-    h += '</div></section>';
-    h += fig(0, 'wide');
+    var sceneIndex=0;
+    function nextScene(){var x=g[sceneIndex];if(!x)return '';var k=sceneIndex++;return frameHTML(x,k,k+nCanon,'thread-scene',all.length,'');}
+    h += sec('Кто это','eye')+'<div class="l-who">'+(c.who||[]).map(function(p){return '<p>'+esc(p)+'</p>'+nextScene();}).join('')+'</div></section>';
     if (c.words && c.words.length) {
       h += sec('Его слова', 'moon') + '<div class="l-words">'
         + c.words.map(function (w, k) {
@@ -11316,7 +11308,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
           }).join('')
         + '</div></section>';
     }
-    h += leftInText ? spareFig() : fig(2, 'wide');
+
     if (c.deeds && c.deeds.length) {
       h += sec('Что было', 'spark') + '<ol class="l-deeds">'
         + c.deeds.map(function (d) {
@@ -11325,7 +11317,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
           }).join('')
         + '</ol></section>';
     }
-    h += spareFig();
+
 
     /* оговорка «на полях» — но не у Сандрии: её генерация правильная */
     if (c.note && c.id !== 'sasha') {
@@ -11333,7 +11325,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
     }
 
     /* последняя страница: стоячий лист, крупно */
-    h += fig(3, 'last');
+    while(sceneIndex<g.length)h+=nextScene();
 
     h += '</div><aside>';
 
@@ -11346,6 +11338,7 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
           }).join('')
         + '</ul></section>';
     }
+    if(fullIndex>=0)h+=canonFig(canon[fullIndex],fullIndex,'thread-full');
     if (c.gift && c.gift.length) {
       h += sec('Что за ним водится', 'hand') + '<div class="l-gift">'
         + c.gift.map(function (x, k) {
@@ -11456,6 +11449,8 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
      Escape и сразу нажатию так и выходит, — отложенная уборка стёрла бы уже
      новый лист и оставила пустой экран. Поэтому уборка живёт в переменной и
      отменяется на входе. То же и с лайтбоксом. */
+  function drawHeroFrame(el){const w=el.clientWidth,h=el.clientHeight;if(!w||!h)return;el.querySelector('svg')?.remove();const svg=E.svg({w,h});svg.classList.add('hero-frame-svg');svg.setAttribute('aria-hidden','true');const rise=w*.40;const clip=E.path.archPath(0,0,w,h,rise);el.querySelector('img').style.clipPath='path("'+clip+'")';svg.append(E.gold(E.path.archPath(5,5,w-10,h-10,rise-5),{sw:1.4,off:.7}));svg.append(E.gold(E.path.archPath(12,12,w-24,h-24,rise-12),{sw:.7,off:.5}));svg.append(E.rosette({x:w/2,y:7,r:14,n:12,sw:.75}));[5,w-5].forEach(x=>svg.append(E.gold('M'+x+','+(rise-9)+'L'+(x+4)+','+rise+'L'+x+','+(rise+9)+'L'+(x-4)+','+rise+'Z',{sw:.8})));svg.append(E.gold('M'+(w*.40)+','+(h-7)+'L'+(w*.60)+','+(h-7),{sw:.7}));el.prepend(svg);}
+  var threadArches=new ResizeObserver(function(entries){entries.forEach(function(e){drawHeroFrame(e.target);});});
   var dosT = 0, lbT = 0;
 
   function openDossier(i) {
@@ -11468,7 +11463,9 @@ W['lica']=function(){var __root=window.document.getElementById('r-lica');var __I
     LB.face = pu ? { src: pu, cap: { label: 'портрет', text: c.name } } : null;
     var sheet = $('#dosSheet');
     sheet.classList.toggle('l-secondary-dossier', c.kind !== 'pc');
+    threadArches.disconnect();
     sheet.innerHTML = dossierHTML(c, i);
+    sheet.querySelectorAll('.l-fig--arch button').forEach(function(el){threadArches.observe(el);});
     watchImages(sheet);
     wantPortrait(c);
     var d = $('#dossier');
@@ -14288,5 +14285,28 @@ W['masterskaya']=function(){var __root=window.document.getElementById('r-masters
 })();
 </script>
 
+<style id="story-threads-dossiers">
+#r-lica .l-dos__head--wide{grid-template-columns:minmax(0,1.28fr) minmax(0,.72fr)}
+#r-lica .l-thread-portraits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;min-width:0}
+#r-lica .l-thread-portraits .l-fig{margin:0;max-width:none;width:100%}
+#r-lica .l-fig--arch button{display:block;position:relative;width:100%;height:auto;aspect-ratio:3/4.2;padding:0;border:0;background:none;box-shadow:none;overflow:visible}
+#r-lica .l-fig--arch img{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:cover!important}
+#r-lica .hero-frame-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:2}
+#r-lica .l-thread-portraits figcaption{margin-top:16px}#r-lica .l-fig--arch figcaption b,#r-lica .l-fig--pose figcaption b,#r-lica .l-fig--thread-full figcaption b{display:none}
+#r-lica .l-thread-poses{margin:32px auto 0}
+#r-lica .l-thread-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:start}
+#r-lica .l-thread-grid .l-fig{margin:0;max-width:none;width:100%;min-width:0}
+#r-lica .l-thread-grid button{display:block;box-sizing:border-box;width:100%;height:auto;aspect-ratio:3/4;padding:4px;border:1px solid var(--line-hair);background:transparent;box-shadow:none}
+#r-lica .l-thread-grid img{display:block;width:100%;height:100%;max-height:none;object-fit:contain}
+#r-lica .l-dos__body{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+#r-lica .l-fig--thread-full,#r-lica .l-fig--thread-scene{width:100%;max-width:none;margin:32px 0}
+#r-lica .l-fig--thread-full button,#r-lica .l-fig--thread-scene button{width:100%;height:auto;padding:0;border:0;background:none;box-shadow:none}
+#r-lica .l-fig--thread-full img,#r-lica .l-fig--thread-scene img{width:100%;height:auto;max-height:none;object-fit:contain}
+#r-lica .l-secondary-dossier .l-thread-poses{max-width:1020px}
+#r-lica .l-secondary-dossier .l-thread-grid{grid-template-columns:repeat(3,minmax(0,220px));gap:24px}
+@media(max-width:1000px){#r-lica .l-dos__head--wide{grid-template-columns:minmax(0,1fr)}#r-lica .l-dos__body{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:800px){#r-lica .l-thread-grid,#r-lica .l-secondary-dossier .l-thread-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
+@media(max-width:500px){#r-lica .l-thread-grid,#r-lica .l-secondary-dossier .l-thread-grid{grid-template-columns:minmax(0,1fr)}#r-lica .l-thread-portraits{grid-template-columns:minmax(0,1fr)}}
+</style>
 </body>
 </html>
