@@ -21,7 +21,7 @@
 
 
 
-<link rel="stylesheet" href="wow-fourth.css?v=7"><link rel="stylesheet" href="motion-rework.css?v=7.1"><link rel="stylesheet" href="original-character-cards.css?v=9"><link rel="stylesheet" href="book-gallery.css?v=1">
+<link rel="stylesheet" href="wow-fourth.css?v=7"><link rel="stylesheet" href="motion-rework.css?v=7.1"><link rel="stylesheet" href="original-character-cards.css?v=9"><link rel="stylesheet" href="book-gallery.css?v=locations-1">
 </head>
 <body style="margin:0">
 <style>
@@ -12351,6 +12351,8 @@ W['karta']=function(){var __root=window.document.getElementById('r-karta');var _
       + (p.ch ? chipCh(+p.ch) : '<span class="k-chip">за полем карты</span>')
       + '</div></div>';
 
+    var views=(window.__LOCATION_IMAGES||{})[id]||[];
+    if(views.length){body+='<div class="m-location-views" aria-label="Виды локации">';views.forEach(function(v,i){body+='<figure><button type="button" data-location-view="'+esc(id)+'" data-view-index="'+i+'" aria-label="Открыть: '+esc(v.caption)+'"><img src="'+esc(v.src)+'" alt="'+esc(v.caption)+'" width="'+v.width+'" height="'+v.height+'" loading="lazy"></button><figcaption>'+esc(v.caption)+'</figcaption></figure>';});body+='</div>';}
     body += '<h4>Что здесь было</h4>';
     told.forEach(function (t) { body += '<p>' + esc(t) + '</p>'; });
 
@@ -14316,6 +14318,7 @@ W['masterskaya']=function(){var __root=window.document.getElementById('r-masters
 @media(max-width:800px){#r-lica .l-thread-grid,#r-lica .l-secondary-dossier .l-thread-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
 @media(max-width:500px){#r-lica .l-thread-grid,#r-lica .l-secondary-dossier .l-thread-grid{grid-template-columns:minmax(0,1fr)}#r-lica .l-thread-portraits{grid-template-columns:minmax(0,1fr)}}
 </style>
-<script src="motion-rework.js?v=9"></script><script src="wow-fourth.js?v=lucius-20260909"></script><script src="book-gallery.js?v=1"></script>
+<script src="motion-rework.js?v=9"></script><script src="wow-fourth.js?v=lucius-20260909"></script><script src="location-images.js?v=1"></script>
+<script src="book-gallery.js?v=locations-1"></script>
 </body>
 </html>

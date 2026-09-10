@@ -11,3 +11,9 @@
 #bookGallery button{color:#e5ce8a;border-color:#9d854c;background:#17141e;cursor:pointer;min-width:44px;min-height:44px;font-size:24px}
 #bookGallery .bg-counter{min-width:70px;text-align:center;font-size:16px}
 @media(max-width:600px){#bookGallery{padding:56px 8px max(12px,env(safe-area-inset-bottom));gap:10px}}
+
+#r-karta .m-location-views{display:grid;gap:18px;margin:18px 0 24px}
+#r-karta .m-location-views figure{margin:0}
+#r-karta .m-location-views button{display:block;width:100%;padding:0;border:1px solid var(--line-hair);background:transparent;cursor:zoom-in}
+#r-karta .m-location-views img{display:block;width:100%;height:auto}
+#r-karta .m-location-views figcaption{font-size:15px;line-height:1.4;color:var(--ink-strong);text-align:center;margin-top:7px}
