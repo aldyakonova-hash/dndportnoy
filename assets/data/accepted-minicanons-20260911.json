@@ -1,0 +1,80 @@
+[
+  {
+    "character": "captive-grandmother",
+    "src": "assets/img/characters/captive-grandmother-20260911/captive-grandmother-02-profile.webp",
+    "sourceSha256": "0b5126a62be357268a14e3f3976f67d9f738e1d17d5e7916a6645892f8686dc5",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "captive-grandmother",
+    "src": "assets/img/characters/captive-grandmother-20260911/grandmother-girl-together.webp",
+    "sourceSha256": "c03ec363182f3ffbf0f171e15f59909107a31b1e23c29a70fe3a52b69773cf2e",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "goblin-shaman",
+    "src": "assets/img/characters/goblin-shaman-20260911/goblin-shaman-02-profile.webp",
+    "sourceSha256": "ff7eb0284b1234fa995f1721a42e8e286930119a29e1d792c967db43074fabec",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "goblin-shaman",
+    "src": "assets/img/characters/goblin-shaman-20260911/goblin-shaman-03-command.webp",
+    "sourceSha256": "eef57730066240a25218577f981e10720d230df2d431aa297eb78911f4fdef8e",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "captive-child",
+    "src": "assets/img/characters/captive-child-20260911/captive-girl-02-profile.webp",
+    "sourceSha256": "c753dbad05096bace3486ab4b0e09d4b76a079fb0b3bdb003cc4f94d02a8c629",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "captive-child",
+    "src": "assets/img/characters/captive-child-20260911/grandmother-girl-together.webp",
+    "sourceSha256": "c03ec363182f3ffbf0f171e15f59909107a31b1e23c29a70fe3a52b69773cf2e",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "coachman",
+    "src": "assets/img/characters/coachman-20260911/coachman-02-profile.webp",
+    "sourceSha256": "18f81562fe0864b2250d5a0db20436b87dc3539dbffd48d5f3a65197f9ff19c6",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "coachman",
+    "src": "assets/img/characters/coachman-20260911/coachman-03-stone-v2-no-winter.webp",
+    "sourceSha256": "02b9a758f4f82f4b6fa03df8935070186e0da362612d445d83d5069d9416116c",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "maisie",
+    "src": "assets/img/characters/maisie-20260911/Мейси-мини-канон.webp",
+    "sourceSha256": "a836aab61aa22ba1835a396d18a9810959f038fc341698fe5cd042778ea61e39",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "young-captive",
+    "src": "assets/img/characters/young-captive-20260911/young-captive-02-healed-profile-v2.webp",
+    "sourceSha256": "4fdf9ef525d883c81fed8aae11596630f3a25b0d1819b2b67630c601f2152c6c",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "young-captive",
+    "src": "assets/img/characters/young-captive-20260911/young-captive-03-watchful.webp",
+    "sourceSha256": "ed4ad9f37dd1239ebd5407ffe31eec951519c689bd41cc79cc06bb1f85d01284",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "fist-recruit",
+    "src": "assets/img/characters/fist-recruit-20260911/fist-recruit-02-healed-profile.webp",
+    "sourceSha256": "de53b5483d511c3a7af3a47ed9477e5a4f19bc057f13e59911f7aa3abb662af3",
+    "approval": "user-20260911"
+  },
+  {
+    "character": "fist-recruit",
+    "src": "assets/img/characters/fist-recruit-20260911/fist-recruit-03-relief.webp",
+    "sourceSha256": "ad5bbabf8bc8104dd3f1d078e0d8d284e3995fac27a441694572107e44cf0785",
+    "approval": "user-20260911"
+  }
+]
