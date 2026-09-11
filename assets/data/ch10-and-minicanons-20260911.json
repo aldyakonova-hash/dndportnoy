@@ -1,0 +1,676 @@
+[
+  {
+    "chapter": 10,
+    "order": 1,
+    "src": "assets/img/ch10-20260911/01.webp",
+    "caption": "Люциус проверяет камень, который им предстоит отдать за неизвестный товар.",
+    "anchor": "Люциус взял один и поднёс к свече, повернул другой гранью и посмотрел сквозь.",
+    "sourceSha256": "660e5fd19dc619f43b9c2f7968be82fedae890437bfe7f38f3f44dca663c8b50"
+  },
+  {
+    "chapter": 10,
+    "order": 2,
+    "src": "assets/img/ch10-20260911/02.webp",
+    "caption": "Люциус обнимает Шмыга; Дварф объясняет, что делать, если они не вернутся.",
+    "anchor": "Люциус подошёл, встал над гоблином на одно колено и обнял его — коротко, обеими руками, как обнимают перед дорогой.",
+    "sourceSha256": "ef8b204f726fc915e5856ff820563ec1cbe8c7fc150c9168e6beb8a046b938c3"
+  },
+  {
+    "chapter": 10,
+    "order": 3,
+    "src": "assets/img/ch10-20260911/03.webp",
+    "caption": "Под прицелом арбалетов Дварф настаивает на одновременном обмене.",
+    "anchor": "— Мы не работаем на контрабандистов, — сказал Дварф. — Мы у контрабандистов покупаем. Это называется торговля. В этом городе за неё даже берут налог, и мы, в отличие от вас, его платим.",
+    "sourceSha256": "fbee1b5eed4b823595ee7e2799b9c06fa747466cd3dba9e43792ae1e75b7c6ff"
+  },
+  {
+    "chapter": 10,
+    "order": 4,
+    "src": "assets/img/ch10-20260911/04.webp",
+    "caption": "Сандрия наклоняется к яйцу: шершавая скорлупа холодна на ощупь.",
+    "anchor": "Сандрия отошла от стены и наклонилась близко, и кончики её волос осветили скорлупу снизу синим.",
+    "sourceSha256": "295769274feec496707c27e3a6785723e0738f173320cc99a5b8d452b49691e3"
+  },
+  {
+    "chapter": 10,
+    "order": 5,
+    "src": "assets/img/ch10-20260911/05.webp",
+    "caption": "Фронки понимает: арбалетчики заняли соседние крыши ещё до их прихода.",
+    "anchor": "— Их сотни, — сказал Фронки в камень, и голос у него был не его, а голос орка с булавой, потому что от испуга он всегда брал первый попавшийся. — Кавалерия по обеим улицам. На крышах арбалетчики. Они там уже лежали. Они лежали там до нас.",
+    "sourceSha256": "5b6d8c007242cb67e51e7de6f5df2cd275bb8adf4f0556088264cc786cfdb8ac"
+  },
+  {
+    "chapter": 10,
+    "order": 6,
+    "src": "assets/img/ch10-20260911/06.webp",
+    "caption": "Дварф и Георгос держат дверь; Сандрия и Люциус идут к люку, который открывает Лютер.",
+    "anchor": "— Сюда, — сказал полуэльф. — Быстро.",
+    "sourceSha256": "1237ed3b8c3c8a18821ddb554d40e5ba952450ec7d8ca822d89e23dd370ddf81"
+  },
+  {
+    "chapter": 10,
+    "order": 7,
+    "src": "assets/img/ch10-20260911/07.webp",
+    "caption": "Дварф идёт согнувшись; металлическая спина скребёт по доскам над головой.",
+    "anchor": "Сандрия вела ладонью по стене, потому что в темноте её волосы светили ровно настолько, чтобы видеть свою руку и не видеть ничего дальше. Она дышала через раз и не жаловалась.",
+    "sourceSha256": "3e30cc1c44aadd59fdc73551d7dd76ca41c855e7774651f76178c2025a47f798"
+  },
+  {
+    "chapter": 10,
+    "order": 8,
+    "src": "assets/img/ch10-20260911/08.webp",
+    "caption": "Ладони Сандрии и Лютера сходятся — и сверху прилетает болт.",
+    "anchor": "Болт пришёл сверху, с левого ската, и вошёл ему в голову, и вышел с другой стороны, и Лютер стоял ещё полсекунды с чужой ладонью в своей.",
+    "sourceSha256": "7dd7a6a60b696351c0bcece8ee91394903e0c5b7ff3679290ce53fe5a95933ec"
+  },
+  {
+    "chapter": 10,
+    "order": 9,
+    "src": "assets/img/ch10-20260911/09.webp",
+    "caption": "Дварф влетает через окно; старуха замирает с ложкой на полпути ко рту.",
+    "anchor": "— Шалом, — сказал Дварф.",
+    "sourceSha256": "5ede9c2f0da0a84035b9964dbd405e98359eb0b953221e29b7e6c40114a7194b"
+  },
+  {
+    "chapter": 10,
+    "order": 10,
+    "src": "assets/img/ch10-20260911/10.webp",
+    "caption": "Люциус тащит парализованную Сандрию к укрытию, отступая спиной вперёд.",
+    "anchor": "Люциус подхватил её под мышки и потащил спиной вперёд, и рёбра у неё волочились по обломкам.",
+    "sourceSha256": "8f5a57ae5a3bff4d28b6de231996e3da7ca8bb072c49af9ea43107ea7cc4ff81"
+  },
+  {
+    "chapter": 10,
+    "order": 11,
+    "src": "assets/img/ch10-20260911/11.webp",
+    "caption": "Фронки кричит с конька крыши; внизу распахиваются ставни и собираются жители.",
+    "anchor": "Он кричал в четыре стороны, меняя голос через раз, чтобы казалось, будто кричат отовсюду, — и через минуту в переулках стали хлопать ставни, а ещё через минуту в квартале появились люди, которые никого не собирались спасать, но очень хотели знать, что происходит, и мешали при этом сильнее любого спасателя.",
+    "sourceSha256": "11f3c143c4959364342cc637fc4de1a2c4e57c3b71aecee3e8f8ee4a285fed7a"
+  },
+  {
+    "chapter": 10,
+    "order": 12,
+    "src": "assets/img/ch10-20260911/12.webp",
+    "caption": "Георгос заносит меч над поверженным рыцарем. Разбитое окно остаётся позади; Дварф уже ушёл.",
+    "anchor": "Георгос поднял меч второй раз и опустил его сверху, прямо на непокрытую голову. Шлем рыцарь снял перед боем сам.",
+    "sourceSha256": "6ead7b167c53f2c0ec9bf141aaf7c970dca184a3b8957f1904f44cce3f2b350d"
+  },
+  {
+    "chapter": 10,
+    "order": 13,
+    "src": "assets/img/ch10-20260911/13.webp",
+    "caption": "Над телами двух копейщиков вырастают демоны. Люциус поднимает ладонь, распознавая их природу.",
+    "anchor": "— Это не нежить, — сказал он. Он сказал это негромко и без ухмылки, и по одному этому все всё поняли. — Нежить я вижу иначе. Это демоны.",
+    "sourceSha256": "5972f4f5a65292aae0e99e0cdf65deec17889046f0504632de5915dcec0d24ac"
+  },
+  {
+    "chapter": 10,
+    "order": 14,
+    "src": "assets/img/ch10-20260911/14.webp",
+    "caption": "Дварф ударяет в бубен; щупальце демона проходит мимо Георгоса.",
+    "anchor": "Он ударил второй раз, иначе — короче и суше, — и ближний демон промахнулся щупальцем мимо Георгоса на целую руку.",
+    "sourceSha256": "d9e36bb045e24d30d72571ee15112c508e19e21b579d92445e4a422ee44db1c3"
+  },
+  {
+    "chapter": 10,
+    "order": 15,
+    "src": "assets/img/ch10-20260911/15.webp",
+    "caption": "Георгос ослабляет захват демона ударом под сустав; освобождённая медведица бросается вперёд.",
+    "anchor": "Она сорвалась вперёд, взяла его поперёк, у самого сустава, и рвала до тех пор, пока в пасти не осталось куска, а потом ещё раз, и ещё, и остановилась только тогда, когда рвать стало нечего.",
+    "sourceSha256": "1da4a271e79d4068f264f123e5478d083587b630e789a5f5f8ee074420285937"
+  },
+  {
+    "chapter": 10,
+    "order": 16,
+    "src": "assets/img/ch10-20260911/16.webp",
+    "caption": "Георгос вкладывает монету в ладонь Сандрии; Дварф объясняет, что означает зарубка.",
+    "anchor": "— Он метит их, — сказал Дварф. — Такая же есть у меня и у Люциуса. Он ставит на них зарубку, и после этого он всегда знает, где эта монета.",
+    "sourceSha256": "9f161e4cd63a420cbc8a4f6cb4ef34a155977dcabdbaa111c05b743a89f84497"
+  },
+  {
+    "chapter": 10,
+    "order": 17,
+    "src": "assets/img/ch10-20260911/17.webp",
+    "caption": "Люциус обнаруживает внутри левой щеки рыцаря шестиконечную звезду в круге.",
+    "anchor": "С внутренней стороны, там, где никто не увидит при жизни, было наколото: круг, а в круге шестиконечная звезда. Наколка была старая и мелкая, сделана она была тесно и неаккуратно, как делают в местах, где нельзя разложиться как следует.",
+    "sourceSha256": "b44be712838371a7d65c64b77929cecfb89172623833d7eadd7e2773f00f2fcf"
+  },
+  {
+    "chapter": 10,
+    "order": 18,
+    "src": "assets/img/ch10-20260911/18.webp",
+    "caption": "Фронки удерживает поваленный шкаф и перехватывает выпущенный в упор арбалетный болт.",
+    "anchor": "Первый попытался повалить его на пол и не сумел: Фронки ушёл из-под захвата, оставив в чужих пальцах перо. Второй достал коротким мечом и попал. Третий выстрелил в упор, и болт Фронки поймал ладонью в воздухе, и это вышло у него лучше, чем он ожидал, и хуже, чем выглядело.",
+    "sourceSha256": "21596ed5b15debb9de342dee04ffb9e7e401778226c0f107d034f9d0adf57333"
+  },
+  {
+    "chapter": 10,
+    "order": 19,
+    "src": "assets/img/ch10-20260911/19.webp",
+    "caption": "Дварф распознаёт зачарованную подделку, положив ладони на скорлупу. Фронки уже закончил осмотр.",
+    "anchor": "— Это не яйцо, — сказал он наконец. — Это подделка. Хорошая, дорогая подделка, и делал её не ювелир, а тот, кто умеет складывать вещи из слов. И если её разбить — будет взрыв. Не такой, чтобы снесло квартал, но такой, что стоять рядом не надо.",
+    "sourceSha256": "99dff775da5a413d2c40566efc118adccf21b9bbd346441ffa24c906af6ac0ed"
+  },
+  {
+    "chapter": 10,
+    "order": 20,
+    "src": "assets/img/ch10-20260911/20.webp",
+    "caption": "В церкви Фронки передаёт Мейси завёрнутое яйцо. Георгос молча сидит рядом.",
+    "anchor": "Она подтянула свёрток к себе на колени и стала катать его по колену туда-сюда, как катают яблоко.",
+    "sourceSha256": "e2e5dc432253426dec6ecf8c7497610eb1833ef86be09e7af3721af056f42035"
+  },
+  {
+    "chapter": 10,
+    "order": 21,
+    "src": "assets/img/ch10-20260911/21.webp",
+    "caption": "Лютера уносят, а у Люциуса остаётся лист вопросов.",
+    "anchor": "— Пять вопросов, — сказал Люциус, глядя на пустые лавки в подвале. — Я их полдня придумывал.",
+    "sourceSha256": "e6d765d4fe28b22a09d5d6acff0cd7e535c5e47693e8d28e4c02e6e0127b23cc"
+  },
+  {
+    "chapter": 10,
+    "order": 22,
+    "src": "assets/img/ch10-20260911/22.webp",
+    "caption": "Эфа оценивает трофейный меч; Георгос молча помогает торгу.",
+    "anchor": "Она взяла меч, повернула к свету, провела ногтем по долу.",
+    "sourceSha256": "1335a3377d5fc01c5c41764ffd1ae7d5a1e5b96cab50b4e3ae7808c42e68e94c"
+  },
+  {
+    "chapter": 10,
+    "order": 23,
+    "src": "assets/img/ch10-20260911/23.webp",
+    "caption": "Люциус отводит левую руку с перстнем от Фронки.",
+    "anchor": "Фронки подошёл и попробовал снять кольцо сам. Люциус убрал руку — не резко, а как убирают руку от чужого локтя в толпе.",
+    "sourceSha256": "fd10a2083096f5794c9bb3259401269736730bad782bd47cfc7f1e61fe0c6efc"
+  },
+  {
+    "chapter": 10,
+    "order": 24,
+    "src": "assets/img/ch10-20260911/24.webp",
+    "caption": "Шмыг моет пони, пока Сандрия и Дварф обсуждают угрозу.",
+    "anchor": "— Пока нет, — сказал Дварф. — Из тех, кто нас видел близко, в живых остались лучники, а они ушли раньше конца.",
+    "sourceSha256": "5ca4916665538ed029127c52a6e9070731d4fc7ebb42b94612c6188fea2929aa"
+  },
+  {
+    "chapter": 10,
+    "order": 25,
+    "src": "assets/img/ch10-20260911/25.webp",
+    "caption": "Дварф ведёт обсуждение, Георгос настаивает: Брандт нужен живым.",
+    "anchor": "Фронки снял колпак и положил его на стол, и бубенчики звякнули один раз.",
+    "sourceSha256": "93f9e445159a49d954bc74d291c4a0186b044cc82cf0680fd78477f92053822c"
+  },
+  {
+    "character": "captive-grandmother",
+    "src": "assets/img/characters/captive-grandmother-20260911/captive-grandmother-01-master.webp",
+    "sourceSha256": "6c8803d4463df3406810a3f694e24ed1f31197530cf4e70c6cb5feea24bd8b02",
+    "approved": true
+  },
+  {
+    "character": "goblin-shaman",
+    "src": "assets/img/characters/goblin-shaman-20260911/goblin-shaman-01-master.webp",
+    "sourceSha256": "58381b3af1181c7e35d9ad5723c3a1bd454e36970b8e17c0b65144efd2e08712",
+    "approved": true
+  },
+  {
+    "character": "city-mage",
+    "src": "assets/img/characters/city-mage-20260911/mage-01-master.webp",
+    "sourceSha256": "b6c9e8a98a6a28c2242ebc4143ac8ee6a845201b2f370161f85381b1599aa573",
+    "approved": true
+  },
+  {
+    "character": "city-mage",
+    "src": "assets/img/characters/city-mage-20260911/mage-02-profile.webp",
+    "sourceSha256": "41c72eb7afd1c99004626f8ab03b278077445a9da809289accf5d6d27b4183e2",
+    "approved": true
+  },
+  {
+    "character": "city-mage",
+    "src": "assets/img/characters/city-mage-20260911/mage-03-back.webp",
+    "sourceSha256": "eea7edf474f1d8ae7733080684c5a085c0df14477a92fbc3050e0d68494216d5",
+    "approved": true
+  },
+  {
+    "character": "city-mage",
+    "src": "assets/img/characters/city-mage-20260911/mage-04-portrait.webp",
+    "sourceSha256": "facb50f568bf6ed63505ef2517bb42c00f90d2ab2f965eb7dc8f978e2028ee50",
+    "approved": true
+  },
+  {
+    "character": "city-mage",
+    "src": "assets/img/characters/city-mage-20260911/mage-05-character.webp",
+    "sourceSha256": "10df904fb9c8c2f4afcc983a8a91c2805bdd394869ffb8f8d638d7372767f547",
+    "approved": true
+  },
+  {
+    "character": "captive-child",
+    "src": "assets/img/characters/captive-child-20260911/captive-girl-01-master.webp",
+    "sourceSha256": "c7d04cb3d0445d17124ced6ba3d7ea56e3e68e43115dd5547935476ba0d98ab5",
+    "approved": true
+  },
+  {
+    "character": "janet",
+    "src": "assets/img/characters/janet-20260911/janet-01-master.webp",
+    "sourceSha256": "3e5aad1c903a55880363f705ca274df832721422abee16da663ac7486d1cff03",
+    "approved": true
+  },
+  {
+    "character": "janet",
+    "src": "assets/img/characters/janet-20260911/janet-02-profile.webp",
+    "sourceSha256": "1354d4cce84288a6507aad9848a6abf656bf89f19a3591ce06ef3e2848d0df60",
+    "approved": true
+  },
+  {
+    "character": "janet",
+    "src": "assets/img/characters/janet-20260911/janet-03-back.webp",
+    "sourceSha256": "d6481abd5ab89e9b5fa6dc4c3e148022d5a378b23c69e8d4a17bea0a6de990b3",
+    "approved": true
+  },
+  {
+    "character": "janet",
+    "src": "assets/img/characters/janet-20260911/janet-04-portrait.webp",
+    "sourceSha256": "dd5fa130425b7f9d247602951979cd849fe28f8bc5391a5e21980527643522a5",
+    "approved": true
+  },
+  {
+    "character": "janet",
+    "src": "assets/img/characters/janet-20260911/janet-05-character.webp",
+    "sourceSha256": "54556e791f8194e22f52e2d1d34a52306aebaea134575ecf386b3b5020d0440f",
+    "approved": true
+  },
+  {
+    "character": "zhora",
+    "src": "assets/img/characters/zhora-20260911/zhora-01-master.webp",
+    "sourceSha256": "8f5a8052898c094eeab58bdcce10daf3de87486e9cdddeaba897b8e0b37bbe7e",
+    "approved": true
+  },
+  {
+    "character": "zhora",
+    "src": "assets/img/characters/zhora-20260911/zhora-02-profile.webp",
+    "sourceSha256": "81f2132e9ce74a659b6eeb0d0743ed910014f32e15f3b5c5ee16a8d41fd4f9ae",
+    "approved": true
+  },
+  {
+    "character": "zhora",
+    "src": "assets/img/characters/zhora-20260911/zhora-03-back.webp",
+    "sourceSha256": "d9c7a0c746cf6c2f59153225377b0021df4d8aaa4e64745e846227c5e863c3f2",
+    "approved": true
+  },
+  {
+    "character": "zhora",
+    "src": "assets/img/characters/zhora-20260911/zhora-04-portrait.webp",
+    "sourceSha256": "e99f011e88c0a8d556c18aa515b2718ff55e22baf3400d15f8c23ba0709509c3",
+    "approved": true
+  },
+  {
+    "character": "zhora",
+    "src": "assets/img/characters/zhora-20260911/zhora-05-character.webp",
+    "sourceSha256": "7c2f31698a4e5dd0b935d8c6fe45da27ec85a12c9e5ba3ca8d3256a15593b092",
+    "approved": true
+  },
+  {
+    "character": "kalista",
+    "src": "assets/img/characters/kalista-20260911/01-master.webp",
+    "sourceSha256": "30aba0a7ec80206a2ff6bef5dfc31341a9062cdf772f277d4ef310c6635f9fa8",
+    "approved": true
+  },
+  {
+    "character": "kalista",
+    "src": "assets/img/characters/kalista-20260911/02-profile.webp",
+    "sourceSha256": "b3e5bfe7daa4318a4babee629c08833070be9226e553ed2bc80816d7dd9dd805",
+    "approved": true
+  },
+  {
+    "character": "kalista",
+    "src": "assets/img/characters/kalista-20260911/03-back.webp",
+    "sourceSha256": "317e9ce9f65e916013cbb3797c3527f2ef78bc0211f62c05a8d2ad2fbb901afa",
+    "approved": true
+  },
+  {
+    "character": "kalista",
+    "src": "assets/img/characters/kalista-20260911/04-portrait.webp",
+    "sourceSha256": "72b834b6d01d5b4f4654cf76d036a481f2e1bc0d34b2ceb28bdbc38f4e3b6d03",
+    "approved": true
+  },
+  {
+    "character": "kalista",
+    "src": "assets/img/characters/kalista-20260911/05-character.webp",
+    "sourceSha256": "ed03f67497a4671e12171993622c1549f7fcfc34e06dd60310b5a97df5f1e63a",
+    "approved": true
+  },
+  {
+    "character": "kalista",
+    "src": "assets/img/characters/kalista-20260911/06-prisoner.webp",
+    "sourceSha256": "6d00f9d9c25bcf18dcf523def0283e793cec5bab208443d2512a6dcb6002ecf0",
+    "approved": true
+  },
+  {
+    "character": "kalista",
+    "src": "assets/img/characters/kalista-20260911/07-dagger.webp",
+    "sourceSha256": "54c88dbb3afa3e9a467841ee5f6f38d881e3479c310c746e9e6f9b1391a70268",
+    "approved": true
+  },
+  {
+    "character": "coachman",
+    "src": "assets/img/characters/coachman-20260911/coachman-01-master.webp",
+    "sourceSha256": "2c074beb1555c0d15771b4048b919c6d3b1214c1c98730fd3d57b884d529148e",
+    "approved": true
+  },
+  {
+    "character": "madam",
+    "src": "assets/img/characters/madam-20260911/madam-01-master.webp",
+    "sourceSha256": "bf156f22c3f9196b957e7e2dc776b1a31b47ce043aeb983cba371a163d27bd85",
+    "approved": true
+  },
+  {
+    "character": "madam",
+    "src": "assets/img/characters/madam-20260911/madam-02-profile.webp",
+    "sourceSha256": "25e8058710485f21ffb06ac77d096f4ddb3c24c6f26c9e04d8ea2128729b539e",
+    "approved": true
+  },
+  {
+    "character": "madam",
+    "src": "assets/img/characters/madam-20260911/madam-03-portrait.webp",
+    "sourceSha256": "fda7637f22e4306bcf696fec295688195a298e0df3ed2d4ffe9a267dfc982105",
+    "approved": true
+  },
+  {
+    "character": "madam",
+    "src": "assets/img/characters/madam-20260911/madam-04-action.webp",
+    "sourceSha256": "9ca69c824f6ee3e6947ad6e510fe32e472170aa13be0704abb16b072a0ae38e9",
+    "approved": true
+  },
+  {
+    "character": "young-captive",
+    "src": "assets/img/characters/young-captive-20260911/young-captive-01-master.webp",
+    "sourceSha256": "b6e46f1baaa7c85b4e0d2a72447503deaf3e1e0b02a5454f77f3e8e039ce76cc",
+    "approved": true
+  },
+  {
+    "character": "fist-recruit",
+    "src": "assets/img/characters/fist-recruit-20260911/fist-recruit-01-master.webp",
+    "sourceSha256": "b8afa3948a2b924e936065d5a1952753d57f0d74641f1504ceffee92af38cee3",
+    "approved": true
+  },
+  {
+    "character": "orc-doorman",
+    "src": "assets/img/characters/orc-doorman-20260911/orc-doorman-01-master.webp",
+    "sourceSha256": "89da6ca440b32a5eb0a8abe3d71326a7cd447599edee7c7cfd4a4744a67e446e",
+    "approved": true
+  },
+  {
+    "character": "orc-doorman",
+    "src": "assets/img/characters/orc-doorman-20260911/orc-doorman-02-profile.webp",
+    "sourceSha256": "cb24267addf23a5f8e3b8ce81d27ed0c7bc3c080d3675e5e869c97122d982b94",
+    "approved": true
+  },
+  {
+    "character": "orc-doorman",
+    "src": "assets/img/characters/orc-doorman-20260911/orc-doorman-03-portrait.webp",
+    "sourceSha256": "8694c8c431d5bea22d71fdf3c038c09d9e172cb5689b10d70b7cb516485fc5fd",
+    "approved": true
+  },
+  {
+    "character": "orc-doorman",
+    "src": "assets/img/characters/orc-doorman-20260911/orc-doorman-04-action.webp",
+    "sourceSha256": "97b7c3f26748d128ebf955c1de4abe100779c3d55457b9ca802ecab63f6b8384",
+    "approved": true
+  },
+  {
+    "character": "halfling-broker",
+    "src": "assets/img/characters/halfling-broker-20260911/halfling-broker-01-master.webp",
+    "sourceSha256": "78612bc5e9f9aec866c5f9176fceda3f74adc44c4172cd844e16e63e537f3742",
+    "approved": true
+  },
+  {
+    "character": "halfling-broker",
+    "src": "assets/img/characters/halfling-broker-20260911/halfling-broker-02-profile.webp",
+    "sourceSha256": "b2282832cce1f6d2f633a444fc5e64a6258811360c658097b79260965b321d0a",
+    "approved": true
+  },
+  {
+    "character": "halfling-broker",
+    "src": "assets/img/characters/halfling-broker-20260911/halfling-broker-03-portrait.webp",
+    "sourceSha256": "5b95c1094490f3c25f1de717b4c5bbedd3babccf0ee1f8de5c9e6d1b230d4a32",
+    "approved": true
+  },
+  {
+    "character": "halfling-broker",
+    "src": "assets/img/characters/halfling-broker-20260911/halfling-broker-04-action.webp",
+    "sourceSha256": "b6f689254ba114aa9bfef37869f7c28468e5ae46915e6c1a969e0436b7203c85",
+    "approved": true
+  },
+  {
+    "character": "pony",
+    "src": "assets/img/characters/pony-20260911/01-master.webp",
+    "sourceSha256": "309f04fbc2236c17444652d813a28c8b083eb7cf59b5192013674dcedab12fab",
+    "approved": true
+  },
+  {
+    "character": "pony",
+    "src": "assets/img/characters/pony-20260911/02-profile.webp",
+    "sourceSha256": "94b7a36447d33e2152e0da0426cbb54e8cc4d9b3c1099f46de58f16c37744a99",
+    "approved": true
+  },
+  {
+    "character": "pony",
+    "src": "assets/img/characters/pony-20260911/03-rear.webp",
+    "sourceSha256": "49f615d2911e9fd04a0d97fb9bc3dbe1eb5df87c2c49196e952db11067f241d0",
+    "approved": true
+  },
+  {
+    "character": "pony",
+    "src": "assets/img/characters/pony-20260911/04-head.webp",
+    "sourceSha256": "27cbdcba729190d436531646c079e5ce3c7d21ee265be6017c8104ab647cdceb",
+    "approved": true
+  },
+  {
+    "character": "pony",
+    "src": "assets/img/characters/pony-20260911/05-accessory.webp",
+    "sourceSha256": "0bd51146810098e890446c730c509e8bab2dbeb99841724b9443de026d655b5e",
+    "approved": true
+  },
+  {
+    "character": "port-priest",
+    "src": "assets/img/characters/port-priest-20260911/emotions.webp",
+    "sourceSha256": "955c950eec4b06ad8049c4d60d9fbc50aa7b28946e28736043d2f0ccd750d670",
+    "approved": true
+  },
+  {
+    "character": "port-priest",
+    "src": "assets/img/characters/port-priest-20260911/hands.webp",
+    "sourceSha256": "00d4639f6fc6f7c51c9cc0162c8876c3587809a7492c5244e47cb901d9d6bd84",
+    "approved": true
+  },
+  {
+    "character": "port-priest",
+    "src": "assets/img/characters/port-priest-20260911/master.webp",
+    "sourceSha256": "f26cff78beb1aec02f065ab5b0e0987f9886dfdd58c51e9d6d6a27f55e9a6995",
+    "approved": true
+  },
+  {
+    "character": "port-priest",
+    "src": "assets/img/characters/port-priest-20260911/portrait.webp",
+    "sourceSha256": "619ae61c8cb020ec2f726a951d668bcc5dd1067152ad6de43d0082f627a38e57",
+    "approved": true
+  },
+  {
+    "character": "port-priest",
+    "src": "assets/img/characters/port-priest-20260911/turnaround.webp",
+    "sourceSha256": "257f3a72fa97e06f0027b3e061ab1328a28cd80e2041cb34e81084f63f27c286",
+    "approved": true
+  },
+  {
+    "character": "sedric",
+    "src": "assets/img/characters/sedric-20260911/sedric-01-master.webp",
+    "sourceSha256": "703f6ec4e45d6053b30d153c624bc8cb635b6c5967b9552184b35a2f851dce4e",
+    "approved": true
+  },
+  {
+    "character": "sedric",
+    "src": "assets/img/characters/sedric-20260911/sedric-02-profile.webp",
+    "sourceSha256": "417963eacb078ef5c0876e22cf82305c10da8d480d46f5fe7e55147764dedd37",
+    "approved": true
+  },
+  {
+    "character": "sedric",
+    "src": "assets/img/characters/sedric-20260911/sedric-03-back.webp",
+    "sourceSha256": "a2dc20d48d4938beb292db5624a37523cc9a60a34c4debd8c079d9b641bc16e7",
+    "approved": true
+  },
+  {
+    "character": "sedric",
+    "src": "assets/img/characters/sedric-20260911/sedric-04-portrait.webp",
+    "sourceSha256": "3edf38a3dbfef90dad42c7f5f4701df59bbbb7b272d5dfcf8aeeb032b3c1ef93",
+    "approved": true
+  },
+  {
+    "character": "sedric",
+    "src": "assets/img/characters/sedric-20260911/sedric-05-character.webp",
+    "sourceSha256": "8a848d82768fc0174da7f063f12d30ecca7235e40890d1dd5467df9df4b13575",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/master.webp",
+    "sourceSha256": "67022ec5ef0ef6ecac3aa225e389befbccfdf34d8cbe10a3a28cf5b95389b682",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/portrait.webp",
+    "sourceSha256": "70d740f5e14cf3c78c1a16c1b7dbae003e6338744cce3a10f8e597253dc6b472",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/turnaround.webp",
+    "sourceSha256": "b4f8b83b2eb1f18455a52af3aea1ccd147b45964749f4afed5d5da6893b4c6dc",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/equipment.webp",
+    "sourceSha256": "626e020c4278b2ca4c98db9eb86e3e80b878dc827f0d7112e07058f5aadffb85",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/emotions-social.webp",
+    "sourceSha256": "8adb31408eb00db163e4072f911cbb6ddad32886094b536045ef002010faba47",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/emotions-crisis.webp",
+    "sourceSha256": "3a14b4c8a14613866811f53ce3d71d815fd13536bb6da283944117f9e004fbe7",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/pose-welcome.webp",
+    "sourceSha256": "fab9b38b0c1f314b951eb078e24e2c3b8276e816a5424a8546abdc87ca394b20",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/pose-examine.webp",
+    "sourceSha256": "a68ce76ee49baabd6dd29cdba56f6c1a9d5116dd00cd39e81838f8dbf56585f5",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/pose-cast.webp",
+    "sourceSha256": "292213f2915160009a2d5e0fdd59505f44b5c448b8a3cdd66d87bb8e52b70e8e",
+    "approved": true
+  },
+  {
+    "character": "herbalist",
+    "src": "assets/img/characters/herbalist-20260911/pose-recoil.webp",
+    "sourceSha256": "572267a67ca089d760508e8cd00fe8de9c5e6ece122a2ace0893a18aac907ef3",
+    "approved": true
+  },
+  {
+    "character": "shmyg",
+    "src": "assets/img/characters/shmyg-20260911/00-shmyg-ch08-approved-master.webp",
+    "sourceSha256": "166ec82c97144d98f1b4c7de69f87265c80eb40954152e522b02f1f76246d16c",
+    "approved": true
+  },
+  {
+    "character": "shmyg",
+    "src": "assets/img/characters/shmyg-20260911/shmyg-ch08-front-v1.webp",
+    "sourceSha256": "84aa9f5dfa14c23e5937adb7c6642493071e0cbc8d728e41e824d0351bd0c108",
+    "approved": true
+  },
+  {
+    "character": "shmyg",
+    "src": "assets/img/characters/shmyg-20260911/shmyg-ch08-profile-facing-right-v2.webp",
+    "sourceSha256": "7cbc65aa011ed7fc97f3666c188539c92061a308d81328f9cacb924e48504630",
+    "approved": true
+  },
+  {
+    "character": "shmyg",
+    "src": "assets/img/characters/shmyg-20260911/shmyg-ch08-profile-facing-left-v1.webp",
+    "sourceSha256": "86a6068ad3d247ed5d2bdec8ecaa447c6a6dd0c9494cb60390cfe5fbebd79577",
+    "approved": true
+  },
+  {
+    "character": "shmyg",
+    "src": "assets/img/characters/shmyg-20260911/shmyg-ch08-back-v1.webp",
+    "sourceSha256": "aeb5c1ed4253422028946cc229a194d7faf3a1bf1429a752adbae6f4f18729a4",
+    "approved": true
+  },
+  {
+    "character": "shpak",
+    "src": "assets/img/characters/shpak-20260911/shpak-01-master.webp",
+    "sourceSha256": "1dfb9315fa52c5c37188b05673f92ab1d8c8a75ae75d9753da87a828dfd10b07",
+    "approved": true
+  },
+  {
+    "character": "shpak",
+    "src": "assets/img/characters/shpak-20260911/shpak-02-profile.webp",
+    "sourceSha256": "6cff22ad3e22c5c953486c9e994d00ae3f9086bd53db514a5597e07ffae2e938",
+    "approved": true
+  },
+  {
+    "character": "shpak",
+    "src": "assets/img/characters/shpak-20260911/shpak-03-portrait.webp",
+    "sourceSha256": "dec7653636c9ef73a227bc05a72c4faa50f509b2e6cc3715daea56664c863fcb",
+    "approved": true
+  },
+  {
+    "character": "shpak",
+    "src": "assets/img/characters/shpak-20260911/shpak-04-action.webp",
+    "sourceSha256": "9ca2ea2b652c38552eabe255db7c1e5a53328f09d4fd75df9ddf5ba8332eee83",
+    "approved": true
+  },
+  {
+    "character": "puppy",
+    "src": "assets/img/characters/puppy-20260911/01-master.webp",
+    "sourceSha256": "9d1a041d78438a143fa3b7714cc3ec049d20dda36e7e5dd819dad9d40a0d290e",
+    "approved": true
+  },
+  {
+    "character": "puppy",
+    "src": "assets/img/characters/puppy-20260911/02-profile.webp",
+    "sourceSha256": "0f44e64e5cb54fda1918aa3604ad14b2821ee9d010853b7c1f8f5abff32cad9c",
+    "approved": true
+  },
+  {
+    "character": "puppy",
+    "src": "assets/img/characters/puppy-20260911/03-rear.webp",
+    "sourceSha256": "f297f9351b6da21e80cf0f53a96ffad202115691ebde8950c2c2ea203f15ae74",
+    "approved": true
+  },
+  {
+    "character": "puppy",
+    "src": "assets/img/characters/puppy-20260911/04-head.webp",
+    "sourceSha256": "2ef0c20d86904f0ef1a96f308ad03ff896dd04474079fc153eb814fad5557c64",
+    "approved": true
+  },
+  {
+    "character": "puppy",
+    "src": "assets/img/characters/puppy-20260911/05-accessory.webp",
+    "sourceSha256": "ff45304bb5e1c3ce1814c19aa4918244af4f33cf2c16b48260bbb162a28a6dce",
+    "approved": true
+  }
+]
