@@ -1,0 +1,62 @@
+[
+  {
+    "character": "ratking",
+    "src": "assets/img/characters/ratking-20260911/master.webp",
+    "sourceSha256": "a044183d24621fd09e2a39cce1a6443de3beff124e692c92dc561fd7ed0de4d8",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "ratking",
+    "src": "assets/img/characters/ratking-20260911/portrait.webp",
+    "sourceSha256": "16618ec4065d7bc4cf30b923bae66b223da561810e56016659de0d806342d2aa",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "ratking",
+    "src": "assets/img/characters/ratking-20260911/sheet.webp",
+    "sourceSha256": "c390c71823b9f2fdbe3246d9da9886c3cb6e63034aecfa0c1554e2eeceb5866a",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "gadalka",
+    "src": "assets/img/characters/gadalka-20260911/hands.webp",
+    "sourceSha256": "1e603da97c1137fc62fabe268f1d678efc554b30d27c29056823f745be3bdd62",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "gadalka",
+    "src": "assets/img/characters/gadalka-20260911/master.webp",
+    "sourceSha256": "aacfe981547c4e92f42425200e3264b9e07f6dd43963bc0a8b28e539f50c6097",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "gadalka",
+    "src": "assets/img/characters/gadalka-20260911/portrait.webp",
+    "sourceSha256": "366fe56fcd081e345a98a9510f9c253b45ed30810d5f060528c029aaf13d280c",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "gadalka",
+    "src": "assets/img/characters/gadalka-20260911/sheet.webp",
+    "sourceSha256": "e751e99123e9c06228261cfb344495dfb0bd53af458bad833ad87d5c991b4f1e",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "black-dragon",
+    "src": "assets/img/characters/black-dragon-20260911/master.webp",
+    "sourceSha256": "9c1917852f73c85d930182e37c31c675ab1cccfda0f3366d9c71fe0394d526a6",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "black-dragon",
+    "src": "assets/img/characters/black-dragon-20260911/portrait.webp",
+    "sourceSha256": "b2c428ed1aebcd0707105829528e3bdceb347f2df87a7fa7ad082af6c3a02547",
+    "status": "approved_by_user"
+  },
+  {
+    "character": "black-dragon",
+    "src": "assets/img/characters/black-dragon-20260911/sheet.webp",
+    "sourceSha256": "96314d89c980786d79d0208e9810a9861a3e7d8c690fdc3e7498e6b2af74b6a9",
+    "status": "approved_by_user"
+  }
+]
